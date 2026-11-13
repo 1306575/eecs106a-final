@@ -12,9 +12,9 @@ class StaticTransformPublisher(Node):
         self.br = StaticTransformBroadcaster(self)
 
         # Homogeneous transform G wrist_3_link -> camera_color_optical_frame
-        G1 = np.array([[1, 0, 0, -0.025],
-                      [0, 1, 0, 0.13],
-                      [0, 0, 1, 0.0],
+        G1 = np.array([[0, -1, 0, -0.025],
+                      [0, 0, -1, 0.13],
+                      [1, 0, 0, 0.0],
                       [0, 0, 0, 1.0]
         ])
 
