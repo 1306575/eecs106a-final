@@ -1,0 +1,6 @@
+source;share/jenga/hook/pythonpath.ps1
+source;share/jenga/hook/pythonpath.dsv
+source;share/jenga/hook/pythonpath.sh
+source;share/jenga/hook/ament_prefix_path.ps1
+source;share/jenga/hook/ament_prefix_path.dsv
+source;share/jenga/hook/ament_prefix_path.sh

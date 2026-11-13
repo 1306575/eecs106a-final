@@ -1,0 +1,22 @@
+running egg_info
+writing ../build/jenga/jenga.egg-info/PKG-INFO
+writing dependency_links to ../build/jenga/jenga.egg-info/dependency_links.txt
+writing entry points to ../build/jenga/jenga.egg-info/entry_points.txt
+writing requirements to ../build/jenga/jenga.egg-info/requires.txt
+writing top-level names to ../build/jenga/jenga.egg-info/top_level.txt
+reading manifest file '../build/jenga/jenga.egg-info/SOURCES.txt'
+writing manifest file '../build/jenga/jenga.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/share/jenga/launch
+copying launch/lab7.launch.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/share/jenga/launch
+running install_egg_info
+Copying ../build/jenga/jenga.egg-info to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga-0.0.0-py3.10.egg-info
+running install_scripts
+Installing JointTrajectory script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/jenga
+Installing main script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/jenga
+Installing tf script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/jenga
+writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/install.log'

@@ -1,0 +1,49 @@
+[1.108s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/jenga': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/visual_servoing build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/install.log --install-scripts $base/lib/visual_servoing --single-version-externally-managed install_data
+[1.349s] running egg_info
+[1.352s] writing ../build/visual_servoing/visual_servoing.egg-info/PKG-INFO
+[1.353s] writing dependency_links to ../build/visual_servoing/visual_servoing.egg-info/dependency_links.txt
+[1.357s] writing entry points to ../build/visual_servoing/visual_servoing.egg-info/entry_points.txt
+[1.360s] writing requirements to ../build/visual_servoing/visual_servoing.egg-info/requires.txt
+[1.365s] writing top-level names to ../build/visual_servoing/visual_servoing.egg-info/top_level.txt
+[1.371s] reading manifest file '../build/visual_servoing/visual_servoing.egg-info/SOURCES.txt'
+[1.374s] writing manifest file '../build/visual_servoing/visual_servoing.egg-info/SOURCES.txt'
+[1.376s] running build
+[1.377s] running build_py
+[1.378s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga
+[1.380s] copying jenga/trajectories.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga
+[1.386s] copying jenga/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga
+[1.392s] copying jenga/controller.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga
+[1.397s] copying jenga/kin_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga
+[1.400s] copying jenga/jacobian_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga
+[1.406s] copying jenga/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga
+[1.409s] copying jenga/static_tf_transform.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga
+[1.414s] copying jenga/JointTrajectory.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga
+[1.419s] running install
+[1.420s] running install_lib
+[1.423s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga
+[1.425s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga/controller.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga
+[1.432s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga/kin_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga
+[1.439s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga/static_tf_transform.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga
+[1.445s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga
+[1.452s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga/jacobian_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga
+[1.460s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga
+[1.469s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga/JointTrajectory.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga
+[1.470s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/jenga/trajectories.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga
+[1.484s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga/controller.py to controller.cpython-310.pyc
+[1.494s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga/kin_func_skeleton.py to kin_func_skeleton.cpython-310.pyc
+[1.505s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga/static_tf_transform.py to static_tf_transform.cpython-310.pyc
+[1.512s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga/main.py to main.cpython-310.pyc
+[1.524s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga/jacobian_func_skeleton.py to jacobian_func_skeleton.cpython-310.pyc
+[1.532s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga/__init__.py to __init__.cpython-310.pyc
+[1.537s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga/JointTrajectory.py to JointTrajectory.cpython-310.pyc
+[1.546s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/jenga/trajectories.py to trajectories.cpython-310.pyc
+[1.555s] running install_data
+[1.559s] running install_egg_info
+[1.562s] removing '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing-0.0.0-py3.10.egg-info' (and everything under it)
+[1.571s] Copying ../build/visual_servoing/visual_servoing.egg-info to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing-0.0.0-py3.10.egg-info
+[1.611s] running install_scripts
+[1.652s] Installing JointTrajectory script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/visual_servoing
+[1.655s] Installing main script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/visual_servoing
+[1.659s] Installing tf script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/visual_servoing
+[1.663s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/install.log'
+[1.683s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/jenga' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/visual_servoing build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/install.log --install-scripts $base/lib/visual_servoing --single-version-externally-managed install_data

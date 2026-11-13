@@ -1,5 +1,5 @@
 [console_scripts]
-JointTrajectory = visual_servoing.JointTrajectory:main
-main = visual_servoing.main:main
-tf = visual_servoing.static_tf_transform:main
+JointTrajectory = jenga.JointTrajectory:main
+main = jenga.main:main
+tf = jenga.static_tf_transform:main
 

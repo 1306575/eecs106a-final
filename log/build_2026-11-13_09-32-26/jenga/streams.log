@@ -1,0 +1,57 @@
+[1.317s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/jenga': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/jenga build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/install.log --install-scripts $base/lib/jenga --single-version-externally-managed install_data
+[1.523s] running egg_info
+[1.524s] creating ../build/jenga/visual_servoing.egg-info
+[1.526s] writing ../build/jenga/visual_servoing.egg-info/PKG-INFO
+[1.533s] writing dependency_links to ../build/jenga/visual_servoing.egg-info/dependency_links.txt
+[1.537s] writing entry points to ../build/jenga/visual_servoing.egg-info/entry_points.txt
+[1.543s] writing requirements to ../build/jenga/visual_servoing.egg-info/requires.txt
+[1.544s] writing top-level names to ../build/jenga/visual_servoing.egg-info/top_level.txt
+[1.546s] writing manifest file '../build/jenga/visual_servoing.egg-info/SOURCES.txt'
+[1.563s] reading manifest file '../build/jenga/visual_servoing.egg-info/SOURCES.txt'
+[1.564s] writing manifest file '../build/jenga/visual_servoing.egg-info/SOURCES.txt'
+[1.566s] running build
+[1.566s] running build_py
+[1.568s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build
+[1.568s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib
+[1.569s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga
+[1.571s] copying jenga/trajectories.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga
+[1.576s] copying jenga/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga
+[1.581s] copying jenga/controller.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga
+[1.588s] copying jenga/kin_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga
+[1.593s] copying jenga/jacobian_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga
+[1.599s] copying jenga/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga
+[1.602s] copying jenga/static_tf_transform.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga
+[1.608s] copying jenga/JointTrajectory.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga
+[1.612s] running install
+[1.614s] running install_lib
+[1.616s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga
+[1.618s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga/kin_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga
+[1.624s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga/JointTrajectory.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga
+[1.631s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga/controller.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga
+[1.643s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga/static_tf_transform.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga
+[1.646s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga/trajectories.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga
+[1.649s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga/jacobian_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga
+[1.655s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga
+[1.659s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build/lib/jenga/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga
+[1.669s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga/kin_func_skeleton.py to kin_func_skeleton.cpython-310.pyc
+[1.680s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga/JointTrajectory.py to JointTrajectory.cpython-310.pyc
+[1.689s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga/controller.py to controller.cpython-310.pyc
+[1.696s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga/static_tf_transform.py to static_tf_transform.cpython-310.pyc
+[1.703s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga/trajectories.py to trajectories.cpython-310.pyc
+[1.712s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga/jacobian_func_skeleton.py to jacobian_func_skeleton.cpython-310.pyc
+[1.719s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga/__init__.py to __init__.cpython-310.pyc
+[1.727s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga/main.py to main.cpython-310.pyc
+[1.739s] running install_data
+[1.740s] copying resource/visual_servoing -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/share/ament_index/resource_index/packages
+[1.743s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/share/visual_servoing
+[1.748s] copying package.xml -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/share/visual_servoing
+[1.750s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/share/visual_servoing/launch
+[1.751s] copying launch/lab7.launch.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/share/visual_servoing/launch
+[1.763s] running install_egg_info
+[1.763s] Copying ../build/jenga/visual_servoing.egg-info to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/visual_servoing-0.0.0-py3.10.egg-info
+[1.802s] running install_scripts
+[1.844s] Installing JointTrajectory script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/jenga
+[1.849s] Installing main script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/jenga
+[1.853s] Installing tf script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/jenga
+[1.859s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/install.log'
+[1.947s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/jenga' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/jenga build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/install.log --install-scripts $base/lib/jenga --single-version-externally-managed install_data

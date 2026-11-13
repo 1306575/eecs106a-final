@@ -1,0 +1,5 @@
+[console_scripts]
+JointTrajectory = jenga.JointTrajectory:main
+main = jenga.main:main
+tf = jenga.static_tf_transform:main
+
