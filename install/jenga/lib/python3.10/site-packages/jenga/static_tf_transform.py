@@ -35,7 +35,7 @@ class StaticTransformPublisher(Node):
         q1 = R.from_matrix(rotation_matrix_camera).as_quat()
 
         self.transform_camera.header.frame_id = 'wrist_3_link'
-        self.transform_camera.child_frame_id = 'camera_color_optical_frame'
+        self.transform_camera.child_frame_id = 'camera_link'
 
         self.transform_camera.transform.translation.x = float(translation_camera[0])
         self.transform_camera.transform.translation.y = float(translation_camera[1])

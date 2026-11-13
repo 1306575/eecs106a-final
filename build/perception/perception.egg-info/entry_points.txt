@@ -1,0 +1,5 @@
+[console_scripts]
+hsv_tuner = perception.hsv_tuner:main
+interactive_plane = perception.interactive_plane:main
+process_pointcloud = perception.process_pointcloud:main
+

@@ -1,0 +1,26 @@
+[2.578s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/planning': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/planning build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/install.log --install-scripts $base/lib/planning --single-version-externally-managed install_data
+[2.834s] running egg_info
+[2.835s] writing ../build/planning/planning.egg-info/PKG-INFO
+[2.838s] writing dependency_links to ../build/planning/planning.egg-info/dependency_links.txt
+[2.843s] writing entry points to ../build/planning/planning.egg-info/entry_points.txt
+[2.845s] writing requirements to ../build/planning/planning.egg-info/requires.txt
+[2.848s] writing top-level names to ../build/planning/planning.egg-info/top_level.txt
+[2.856s] reading manifest file '../build/planning/planning.egg-info/SOURCES.txt'
+[2.858s] writing manifest file '../build/planning/planning.egg-info/SOURCES.txt'
+[2.860s] running build
+[2.860s] running build_py
+[2.865s] running install
+[2.866s] running install_lib
+[2.870s] running install_data
+[2.874s] running install_egg_info
+[2.876s] removing '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning-0.0.0-py3.10.egg-info' (and everything under it)
+[2.885s] Copying ../build/planning/planning.egg-info to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning-0.0.0-py3.10.egg-info
+[2.928s] running install_scripts
+[2.949s] Installing gripper script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[2.954s] Installing ik script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[2.958s] Installing main script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[2.961s] Installing planning_scene_obstacles script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[2.965s] Installing tf script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[2.969s] Installing transform_cube_pose script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[2.973s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/install.log'
+[3.114s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/planning' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/planning build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/install.log --install-scripts $base/lib/planning --single-version-externally-managed install_data

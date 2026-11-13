@@ -80,7 +80,6 @@ class RealSensePCSubscriber(Node):
 
         transformed_cloud = do_transform_cloud(msg, tf) # TODO: look what do_transform_cloud takes in and outputs
 
-
         self.publish_filter_planes(transformed_cloud.header)
         
         raw_points = pc2.read_points(

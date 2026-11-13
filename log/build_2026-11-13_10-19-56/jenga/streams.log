@@ -1,0 +1,23 @@
+[2.318s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/jenga': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/jenga build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/install.log --install-scripts $base/lib/jenga --single-version-externally-managed install_data
+[2.556s] running egg_info
+[2.557s] writing ../build/jenga/jenga.egg-info/PKG-INFO
+[2.561s] writing dependency_links to ../build/jenga/jenga.egg-info/dependency_links.txt
+[2.564s] writing entry points to ../build/jenga/jenga.egg-info/entry_points.txt
+[2.567s] writing requirements to ../build/jenga/jenga.egg-info/requires.txt
+[2.570s] writing top-level names to ../build/jenga/jenga.egg-info/top_level.txt
+[2.579s] reading manifest file '../build/jenga/jenga.egg-info/SOURCES.txt'
+[2.580s] writing manifest file '../build/jenga/jenga.egg-info/SOURCES.txt'
+[2.583s] running build
+[2.583s] running build_py
+[2.588s] running install
+[2.588s] running install_lib
+[2.598s] running install_data
+[2.602s] running install_egg_info
+[2.608s] removing '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga-0.0.0-py3.10.egg-info' (and everything under it)
+[2.618s] Copying ../build/jenga/jenga.egg-info to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages/jenga-0.0.0-py3.10.egg-info
+[2.657s] running install_scripts
+[2.681s] Installing JointTrajectory script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/jenga
+[2.685s] Installing main script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/jenga
+[2.689s] Installing tf script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/jenga
+[2.693s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/install.log'
+[2.773s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/jenga' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/jenga build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/jenga/install.log --install-scripts $base/lib/jenga --single-version-externally-managed install_data

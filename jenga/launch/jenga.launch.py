@@ -29,6 +29,10 @@ def generate_launch_description():
                 'rs_launch.py'
             )
         ),
+        launch_arguments={
+            'pointcloud.enable': 'true',
+            'rgb_camera.color_profile': '1920x1080x30'
+        }.items()
     )
 
     # TF Broadcaster (wrist -> camera)
