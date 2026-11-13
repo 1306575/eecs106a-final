@@ -16,7 +16,7 @@ jenga/kin_func_skeleton.py
 jenga/main.py
 jenga/static_tf_transform.py
 jenga/trajectories.py
-launch/lab7.launch.py
+launch/jenga.launch.py
 resource/jenga
 test/test_copyright.py
 test/test_flake8.py
