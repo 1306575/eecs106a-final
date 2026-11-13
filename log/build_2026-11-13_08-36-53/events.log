@@ -1,0 +1,519 @@
+[0.000000] (-) TimerEvent: {}
+[0.000098] (ros2_aruco) JobQueued: {'identifier': 'ros2_aruco', 'dependencies': OrderedDict()}
+[0.000121] (ros2_aruco_interfaces) JobQueued: {'identifier': 'ros2_aruco_interfaces', 'dependencies': OrderedDict()}
+[0.000138] (visual_servoing) JobQueued: {'identifier': 'visual_servoing', 'dependencies': OrderedDict()}
+[0.000153] (ros2_aruco) JobStarted: {'identifier': 'ros2_aruco'}
+[0.049825] (ros2_aruco_interfaces) JobStarted: {'identifier': 'ros2_aruco_interfaces'}
+[0.067223] (visual_servoing) JobStarted: {'identifier': 'visual_servoing'}
+[0.099563] (-) TimerEvent: {}
+[0.199853] (-) TimerEvent: {}
+[0.300005] (-) TimerEvent: {}
+[0.362373] (ros2_aruco_interfaces) JobProgress: {'identifier': 'ros2_aruco_interfaces', 'progress': 'cmake'}
+[0.374060] (ros2_aruco_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/ros2_aruco_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces'], 'cwd': '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco_interfaces', 'env': OrderedDict([('ARCH', 'x86_64'), ('QT_SCALE_FACTOR', '1'), ('USER', 'ee106a-abl'), ('HOSTNAME', 'ros2'), ('XDG_SESSION_TYPE', 'x11'), ('MASTERDIR', '/home/ff/ee106a'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('XDG_CACHE_HOME', '/home/cc/ee106a/fa26/class/ee106a-abl/.cache'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cc/ee106a/fa26/class/ee106a-abl'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge:appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('EE106_UR_ROBOT_IP', '192.168.1.102'), ('DISTROBOX_ENTER_PATH', '/usr/local/bin/distrobox-enter'), ('SYSTEMD_EXEC_PID', '64478'), ('NNTPSERVER', 'news.csua.berkeley.edu'), ('VISUAL', 'emacs'), ('XDG_STATE_HOME', '/home/cc/ee106a/fa26/class/ee106a-abl/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/90902/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/ff/ee106a/robot_workspaces/ur/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ee106a-abl'), ('MASTER', 'ee106a'), ('WINDOWID', '37748742'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('USERNAME', 'ee106a-abl'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', '139'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/humble/bin:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/share/b/grading/bin:/share/b/grading/sbin::/share/b/bin:/home/ff/ee106a/venvs/all:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/share/b/grading/bin:/share/b/grading/sbin::/share/b/bin:/home/ff/ee106a/venvs/all'), ('SESSION_MANAGER', 'local/c105-8:@/tmp/.ICE-unix/64572,unix/c105-8:/tmp/.ICE-unix/64572'), ('OS', 'Linux'), ('XDG_RUNTIME_DIR', '/run/user/90902'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_DATA_HOME', '/home/cc/ee106a/fa26/class/ee106a-abl/.local/share'), ('XDG_CONFIG_HOME', '/home/cc/ee106a/fa26/class/ee106a-abl/.config'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/run/user/90902/gdm/Xauthority'), ('SSH_AUTH_SOCK', '/run/user/90902/keyring/ssh'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('EE106_UR_ROBOT_NAME', 'astroboy'), ('GDMSESSION', 'mate'), ('GPG_AGENT_INFO', '/run/user/90902/gnupg/S.gpg-agent:0:1'), ('CONFIG_SHELL', '/usr/bin/ksh'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco_interfaces'), ('EE106_ENV_SETUP', 'ur_ros2'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/mate:/usr/share/mate:/usr/share/gnome:/home/cc/ee106a/fa26/class/ee106a-abl/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/usr/local/share:/usr/share'), ('PYTHONPATH', '/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('MANPATH', '/usr/local/man:/usr/man:/usr/X11/man:/usr/local/man:/usr/man:/usr/X11/man::/share/b/grading/man:/share/b/grading/man'), ('VTE_VERSION', '6800'), ('EDITOR', 'emacs'), ('QT_FONT_DPI', '122'), ('CMAKE_PREFIX_PATH', '/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble')]), 'shell': False}
+[0.402128] (-) TimerEvent: {}
+[0.502462] (-) TimerEvent: {}
+[0.602810] (-) TimerEvent: {}
+[0.703118] (-) TimerEvent: {}
+[0.803446] (-) TimerEvent: {}
+[0.903736] (-) TimerEvent: {}
+[1.003963] (-) TimerEvent: {}
+[1.104323] (-) TimerEvent: {}
+[1.204674] (-) TimerEvent: {}
+[1.304984] (-) TimerEvent: {}
+[1.405288] (-) TimerEvent: {}
+[1.505581] (-) TimerEvent: {}
+[1.605799] (-) TimerEvent: {}
+[1.706146] (-) TimerEvent: {}
+[1.806346] (-) TimerEvent: {}
+[1.904212] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.906389] (-) TimerEvent: {}
+[2.006557] (-) TimerEvent: {}
+[2.106884] (-) TimerEvent: {}
+[2.162924] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.206980] (-) TimerEvent: {}
+[2.222134] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.307053] (-) TimerEvent: {}
+[2.407290] (-) TimerEvent: {}
+[2.507664] (-) TimerEvent: {}
+[2.599834] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.607732] (-) TimerEvent: {}
+[2.622677] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.641589] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.657891] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.707812] (-) TimerEvent: {}
+[2.709949] (ros2_aruco) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/ros2_aruco', 'build', '--build-base', '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco/build', 'install', '--record', '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco/install.log', '--install-scripts', '$base/lib/ros2_aruco', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/ros2_aruco', 'env': {'ARCH': 'x86_64', 'QT_SCALE_FACTOR': '1', 'USER': 'ee106a-abl', 'HOSTNAME': 'ros2', 'XDG_SESSION_TYPE': 'x11', 'MASTERDIR': '/home/ff/ee106a', 'COMPIZ_CONFIG_PROFILE': 'mate', 'XDG_CACHE_HOME': '/home/cc/ee106a/fa26/class/ee106a-abl/.cache', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/cc/ee106a/fa26/class/ee106a-abl', 'DESKTOP_SESSION': 'mate', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'gail:atk-bridge:appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module', 'EE106_UR_ROBOT_IP': '192.168.1.102', 'DISTROBOX_ENTER_PATH': '/usr/local/bin/distrobox-enter', 'SYSTEMD_EXEC_PID': '64478', 'NNTPSERVER': 'news.csua.berkeley.edu', 'VISUAL': 'emacs', 'XDG_STATE_HOME': '/home/cc/ee106a/fa26/class/ee106a-abl/.local/state', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/90902/bus', 'COLORTERM': 'truecolor', 'container': 'podman', 'UBUNTU_MENUPROXY': '1', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'COLCON_PREFIX_PATH': '/home/ff/ee106a/robot_workspaces/ur/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'ee106a-abl', 'MASTER': 'ee106a', 'WINDOWID': '37748742', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERMINFO_DIRS': '/usr/share/terminfo:/run/host/usr/share/terminfo', 'USERNAME': 'ee106a-abl', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': '139', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'INSIDE_CAJA_PYTHON': '', 'PATH': '/opt/ros/humble/bin:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/share/b/grading/bin:/share/b/grading/sbin::/share/b/bin:/home/ff/ee106a/venvs/all:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/share/b/grading/bin:/share/b/grading/sbin::/share/b/bin:/home/ff/ee106a/venvs/all', 'SESSION_MANAGER': 'local/c105-8:@/tmp/.ICE-unix/64572,unix/c105-8:/tmp/.ICE-unix/64572', 'OS': 'Linux', 'XDG_RUNTIME_DIR': '/run/user/90902', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'MATE', 'XDG_DATA_HOME': '/home/cc/ee106a/fa26/class/ee106a-abl/.local/share', 'XDG_CONFIG_HOME': '/home/cc/ee106a/fa26/class/ee106a-abl/.config', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'mate', 'XAUTHORITY': '/run/user/90902/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/90902/keyring/ssh', 'ROS_DOMAIN_ID': '28', 'AMENT_PREFIX_PATH': '/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble', 'SHELL': '/usr/bin/bash', 'QT_ACCESSIBILITY': '1', 'EE106_UR_ROBOT_NAME': 'astroboy', 'GDMSESSION': 'mate', 'GPG_AGENT_INFO': '/run/user/90902/gnupg/S.gpg-agent:0:1', 'CONFIG_SHELL': '/usr/bin/ksh', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco', 'EE106_ENV_SETUP': 'ur_ros2', 'CONTAINER_ID': 'ros2', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-mate:/etc/xdg', 'CLUTTER_IM_MODULE': 'ibus', 'XDG_DATA_DIRS': '/usr/share/mate:/usr/share/mate:/usr/share/gnome:/home/cc/ee106a/fa26/class/ee106a-abl/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/usr/local/share:/usr/share', 'PYTHONPATH': '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/lib/python3.10/site-packages:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'MANPATH': '/usr/local/man:/usr/man:/usr/X11/man:/usr/local/man:/usr/man:/usr/X11/man::/share/b/grading/man:/share/b/grading/man', 'VTE_VERSION': '6800', 'EDITOR': 'emacs', 'QT_FONT_DPI': '122'}, 'shell': False}
+[2.726847] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.726982] (visual_servoing) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/visual_servoing', 'build', '--build-base', '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build', 'install', '--record', '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/install.log', '--install-scripts', '$base/lib/visual_servoing', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/visual_servoing', 'env': {'ARCH': 'x86_64', 'QT_SCALE_FACTOR': '1', 'USER': 'ee106a-abl', 'HOSTNAME': 'ros2', 'XDG_SESSION_TYPE': 'x11', 'MASTERDIR': '/home/ff/ee106a', 'COMPIZ_CONFIG_PROFILE': 'mate', 'XDG_CACHE_HOME': '/home/cc/ee106a/fa26/class/ee106a-abl/.cache', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/cc/ee106a/fa26/class/ee106a-abl', 'DESKTOP_SESSION': 'mate', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'gail:atk-bridge:appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module', 'EE106_UR_ROBOT_IP': '192.168.1.102', 'DISTROBOX_ENTER_PATH': '/usr/local/bin/distrobox-enter', 'SYSTEMD_EXEC_PID': '64478', 'NNTPSERVER': 'news.csua.berkeley.edu', 'VISUAL': 'emacs', 'XDG_STATE_HOME': '/home/cc/ee106a/fa26/class/ee106a-abl/.local/state', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/90902/bus', 'COLORTERM': 'truecolor', 'container': 'podman', 'UBUNTU_MENUPROXY': '1', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'COLCON_PREFIX_PATH': '/home/ff/ee106a/robot_workspaces/ur/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'ee106a-abl', 'MASTER': 'ee106a', 'WINDOWID': '37748742', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERMINFO_DIRS': '/usr/share/terminfo:/run/host/usr/share/terminfo', 'USERNAME': 'ee106a-abl', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': '139', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'INSIDE_CAJA_PYTHON': '', 'PATH': '/opt/ros/humble/bin:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/share/b/grading/bin:/share/b/grading/sbin::/share/b/bin:/home/ff/ee106a/venvs/all:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/share/b/grading/bin:/share/b/grading/sbin::/share/b/bin:/home/ff/ee106a/venvs/all', 'SESSION_MANAGER': 'local/c105-8:@/tmp/.ICE-unix/64572,unix/c105-8:/tmp/.ICE-unix/64572', 'OS': 'Linux', 'XDG_RUNTIME_DIR': '/run/user/90902', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'MATE', 'XDG_DATA_HOME': '/home/cc/ee106a/fa26/class/ee106a-abl/.local/share', 'XDG_CONFIG_HOME': '/home/cc/ee106a/fa26/class/ee106a-abl/.config', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'mate', 'XAUTHORITY': '/run/user/90902/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/90902/keyring/ssh', 'ROS_DOMAIN_ID': '28', 'AMENT_PREFIX_PATH': '/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble', 'SHELL': '/usr/bin/bash', 'QT_ACCESSIBILITY': '1', 'EE106_UR_ROBOT_NAME': 'astroboy', 'GDMSESSION': 'mate', 'GPG_AGENT_INFO': '/run/user/90902/gnupg/S.gpg-agent:0:1', 'CONFIG_SHELL': '/usr/bin/ksh', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing', 'EE106_ENV_SETUP': 'ur_ros2', 'CONTAINER_ID': 'ros2', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-mate:/etc/xdg', 'CLUTTER_IM_MODULE': 'ibus', 'XDG_DATA_DIRS': '/usr/share/mate:/usr/share/mate:/usr/share/gnome:/home/cc/ee106a/fa26/class/ee106a-abl/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/usr/local/share:/usr/share', 'PYTHONPATH': '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'MANPATH': '/usr/local/man:/usr/man:/usr/X11/man:/usr/local/man:/usr/man:/usr/X11/man::/share/b/grading/man:/share/b/grading/man', 'VTE_VERSION': '6800', 'EDITOR': 'emacs', 'QT_FONT_DPI': '122'}, 'shell': False}
+[2.807898] (-) TimerEvent: {}
+[2.908109] (-) TimerEvent: {}
+[2.945934] (visual_servoing) StdoutLine: {'line': b'running egg_info\n'}
+[2.946601] (visual_servoing) StdoutLine: {'line': b'creating ../build/visual_servoing/visual_servoing.egg-info\n'}
+[2.949030] (visual_servoing) StdoutLine: {'line': b'writing ../build/visual_servoing/visual_servoing.egg-info/PKG-INFO\n'}
+[2.954561] (visual_servoing) StdoutLine: {'line': b'writing dependency_links to ../build/visual_servoing/visual_servoing.egg-info/dependency_links.txt\n'}
+[2.957427] (visual_servoing) StdoutLine: {'line': b'writing entry points to ../build/visual_servoing/visual_servoing.egg-info/entry_points.txt\n'}
+[2.959865] (visual_servoing) StdoutLine: {'line': b'writing requirements to ../build/visual_servoing/visual_servoing.egg-info/requires.txt\n'}
+[2.962331] (visual_servoing) StdoutLine: {'line': b'writing top-level names to ../build/visual_servoing/visual_servoing.egg-info/top_level.txt\n'}
+[2.962449] (ros2_aruco) StdoutLine: {'line': b'running egg_info\n'}
+[2.962978] (ros2_aruco) StdoutLine: {'line': b'creating ../build/ros2_aruco/ros2_aruco.egg-info\n'}
+[2.965118] (visual_servoing) StdoutLine: {'line': b"writing manifest file '../build/visual_servoing/visual_servoing.egg-info/SOURCES.txt'\n"}
+[2.965293] (ros2_aruco) StdoutLine: {'line': b'writing ../build/ros2_aruco/ros2_aruco.egg-info/PKG-INFO\n'}
+[2.969177] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.971507] (ros2_aruco) StdoutLine: {'line': b'writing dependency_links to ../build/ros2_aruco/ros2_aruco.egg-info/dependency_links.txt\n'}
+[2.973141] (visual_servoing) StdoutLine: {'line': b"reading manifest file '../build/visual_servoing/visual_servoing.egg-info/SOURCES.txt'\n"}
+[2.974229] (ros2_aruco) StdoutLine: {'line': b'writing entry points to ../build/ros2_aruco/ros2_aruco.egg-info/entry_points.txt\n'}
+[2.975103] (visual_servoing) StdoutLine: {'line': b"writing manifest file '../build/visual_servoing/visual_servoing.egg-info/SOURCES.txt'\n"}
+[2.976608] (visual_servoing) StdoutLine: {'line': b'running build\n'}
+[2.976674] (visual_servoing) StdoutLine: {'line': b'running build_py\n'}
+[2.976965] (ros2_aruco) StdoutLine: {'line': b'writing requirements to ../build/ros2_aruco/ros2_aruco.egg-info/requires.txt\n'}
+[2.977555] (visual_servoing) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build\n'}
+[2.978572] (visual_servoing) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib\n'}
+[2.979751] (visual_servoing) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing\n'}
+[2.979865] (ros2_aruco) StdoutLine: {'line': b'writing top-level names to ../build/ros2_aruco/ros2_aruco.egg-info/top_level.txt\n'}
+[2.981601] (visual_servoing) StdoutLine: {'line': b'copying visual_servoing/trajectories.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing\n'}
+[2.982775] (ros2_aruco) StdoutLine: {'line': b"writing manifest file '../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'\n"}
+[2.985200] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.985877] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.986436] (visual_servoing) StdoutLine: {'line': b'copying visual_servoing/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing\n'}
+[2.986778] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.991802] (visual_servoing) StdoutLine: {'line': b'copying visual_servoing/controller.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing\n'}
+[2.994041] (ros2_aruco) StdoutLine: {'line': b"reading manifest file '../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'\n"}
+[2.996874] (ros2_aruco) StdoutLine: {'line': b"writing manifest file '../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'\n"}
+[2.997154] (visual_servoing) StdoutLine: {'line': b'copying visual_servoing/kin_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing\n'}
+[2.998777] (ros2_aruco) StdoutLine: {'line': b'running build\n'}
+[2.998965] (ros2_aruco) StdoutLine: {'line': b'running build_py\n'}
+[2.999952] (ros2_aruco) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco/build\n'}
+[3.001406] (ros2_aruco) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco/build/lib\n'}
+[3.001963] (visual_servoing) StdoutLine: {'line': b'copying visual_servoing/jacobian_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing\n'}
+[3.003326] (ros2_aruco) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco/build/lib/ros2_aruco\n'}
+[3.005386] (ros2_aruco) StdoutLine: {'line': b'copying ros2_aruco/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco/build/lib/ros2_aruco\n'}
+[3.007100] (visual_servoing) StdoutLine: {'line': b'copying visual_servoing/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing\n'}
+[3.008188] (-) TimerEvent: {}
+[3.009580] (ros2_aruco) StdoutLine: {'line': b'copying ros2_aruco/aruco_generate_marker.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco/build/lib/ros2_aruco\n'}
+[3.011377] (visual_servoing) StdoutLine: {'line': b'copying visual_servoing/static_tf_transform.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing\n'}
+[3.015354] (ros2_aruco) StdoutLine: {'line': b'copying ros2_aruco/aruco_node.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco/build/lib/ros2_aruco\n'}
+[3.016749] (visual_servoing) StdoutLine: {'line': b'copying visual_servoing/JointTrajectory.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing\n'}
+[3.020908] (ros2_aruco) StdoutLine: {'line': b'running install\n'}
+[3.021530] (ros2_aruco) StdoutLine: {'line': b'running install_lib\n'}
+[3.022639] (visual_servoing) StdoutLine: {'line': b'running install\n'}
+[3.023233] (visual_servoing) StdoutLine: {'line': b'running install_lib\n'}
+[3.024865] (ros2_aruco) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco\n'}
+[3.026836] (visual_servoing) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing\n'}
+[3.027000] (ros2_aruco) StdoutLine: {'line': b'copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco/build/lib/ros2_aruco/aruco_node.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco\n'}
+[3.029153] (visual_servoing) StdoutLine: {'line': b'copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing\n'}
+[3.032847] (ros2_aruco) StdoutLine: {'line': b'copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco/build/lib/ros2_aruco/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco\n'}
+[3.034048] (visual_servoing) StdoutLine: {'line': b'copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/jacobian_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing\n'}
+[3.036914] (ros2_aruco) StdoutLine: {'line': b'copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco/build/lib/ros2_aruco/aruco_generate_marker.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco\n'}
+[3.040169] (visual_servoing) StdoutLine: {'line': b'copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing\n'}
+[3.046091] (visual_servoing) StdoutLine: {'line': b'copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/JointTrajectory.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing\n'}
+[3.051433] (ros2_aruco) StdoutLine: {'line': b'byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/aruco_node.py to aruco_node.cpython-310.pyc\n'}
+[3.052727] (visual_servoing) StdoutLine: {'line': b'copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/kin_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing\n'}
+[3.058457] (visual_servoing) StdoutLine: {'line': b'copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/controller.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing\n'}
+[3.062463] (ros2_aruco) StdoutLine: {'line': b'byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/__init__.py to __init__.cpython-310.pyc\n'}
+[3.064671] (visual_servoing) StdoutLine: {'line': b'copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/trajectories.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing\n'}
+[3.068462] (ros2_aruco) StdoutLine: {'line': b'byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/aruco_generate_marker.py to aruco_generate_marker.cpython-310.pyc\n'}
+[3.070503] (visual_servoing) StdoutLine: {'line': b'copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/static_tf_transform.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing\n'}
+[3.075183] (ros2_aruco) StdoutLine: {'line': b'running install_data\n'}
+[3.075930] (ros2_aruco) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/share/ament_index\n'}
+[3.076565] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.077094] (ros2_aruco) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/share/ament_index/resource_index\n'}
+[3.077857] (visual_servoing) StdoutLine: {'line': b'byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/__init__.py to __init__.cpython-310.pyc\n'}
+[3.078398] (ros2_aruco) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/share/ament_index/resource_index/packages\n'}
+[3.080528] (ros2_aruco) StdoutLine: {'line': b'copying resource/ros2_aruco -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/share/ament_index/resource_index/packages\n'}
+[3.084793] (visual_servoing) StdoutLine: {'line': b'byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/jacobian_func_skeleton.py to jacobian_func_skeleton.cpython-310.pyc\n'}
+[3.084981] (ros2_aruco) StdoutLine: {'line': b'copying package.xml -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/share/ros2_aruco\n'}
+[3.090433] (ros2_aruco) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/share/ros2_aruco/launch\n'}
+[3.091937] (ros2_aruco) StdoutLine: {'line': b'copying launch/aruco_recognition.launch.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/share/ros2_aruco/launch\n'}
+[3.092295] (visual_servoing) StdoutLine: {'line': b'byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/main.py to main.cpython-310.pyc\n'}
+[3.097286] (ros2_aruco) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/share/ros2_aruco/config\n'}
+[3.098729] (ros2_aruco) StdoutLine: {'line': b'copying config/aruco_parameters_old.yaml -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/share/ros2_aruco/config\n'}
+[3.104236] (visual_servoing) StdoutLine: {'line': b'byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/JointTrajectory.py to JointTrajectory.cpython-310.pyc\n'}
+[3.104497] (ros2_aruco) StdoutLine: {'line': b'copying config/aruco_parameters.yaml -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/share/ros2_aruco/config\n'}
+[3.108278] (-) TimerEvent: {}
+[3.109246] (ros2_aruco) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.114641] (ros2_aruco) StdoutLine: {'line': b'Copying ../build/ros2_aruco/ros2_aruco.egg-info to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco-0.1.0-py3.10.egg-info\n'}
+[3.116637] (visual_servoing) StdoutLine: {'line': b'byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/kin_func_skeleton.py to kin_func_skeleton.cpython-310.pyc\n'}
+[3.126444] (visual_servoing) StdoutLine: {'line': b'byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/controller.py to controller.cpython-310.pyc\n'}
+[3.134303] (visual_servoing) StdoutLine: {'line': b'byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/trajectories.py to trajectories.cpython-310.pyc\n'}
+[3.143450] (visual_servoing) StdoutLine: {'line': b'byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/static_tf_transform.py to static_tf_transform.cpython-310.pyc\n'}
+[3.150315] (visual_servoing) StdoutLine: {'line': b'running install_data\n'}
+[3.151124] (visual_servoing) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/ament_index\n'}
+[3.152683] (visual_servoing) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/ament_index/resource_index\n'}
+[3.154575] (visual_servoing) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/ament_index/resource_index/packages\n'}
+[3.156474] (visual_servoing) StdoutLine: {'line': b'copying resource/visual_servoing -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/ament_index/resource_index/packages\n'}
+[3.158713] (ros2_aruco) StdoutLine: {'line': b'running install_scripts\n'}
+[3.160676] (visual_servoing) StdoutLine: {'line': b'copying package.xml -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/visual_servoing\n'}
+[3.165900] (visual_servoing) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/visual_servoing/launch\n'}
+[3.167319] (visual_servoing) StdoutLine: {'line': b'copying launch/lab7.launch.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/visual_servoing/launch\n'}
+[3.171657] (visual_servoing) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.175285] (visual_servoing) StdoutLine: {'line': b'Copying ../build/visual_servoing/visual_servoing.egg-info to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing-0.0.0-py3.10.egg-info\n'}
+[3.187509] (ros2_aruco) StdoutLine: {'line': b'Installing aruco_generate_marker script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/lib/ros2_aruco\n'}
+[3.192097] (ros2_aruco) StdoutLine: {'line': b'Installing aruco_node script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco/lib/ros2_aruco\n'}
+[3.196371] (ros2_aruco) StdoutLine: {'line': b"writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco/install.log'\n"}
+[3.208367] (-) TimerEvent: {}
+[3.212630] (visual_servoing) StdoutLine: {'line': b'running install_scripts\n'}
+[3.213691] (ros2_aruco) CommandEnded: {'returncode': 0}
+[3.230030] (visual_servoing) StdoutLine: {'line': b'Installing JointTrajectory script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/visual_servoing\n'}
+[3.234784] (visual_servoing) StdoutLine: {'line': b'Installing main script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/visual_servoing\n'}
+[3.238826] (visual_servoing) StdoutLine: {'line': b'Installing tf script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/visual_servoing\n'}
+[3.242667] (visual_servoing) StdoutLine: {'line': b"writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/install.log'\n"}
+[3.266093] (ros2_aruco) JobEnded: {'identifier': 'ros2_aruco', 'rc': 0}
+[3.274275] (visual_servoing) CommandEnded: {'returncode': 0}
+[3.308421] (-) TimerEvent: {}
+[3.309799] (visual_servoing) JobEnded: {'identifier': 'visual_servoing', 'rc': 0}
+[3.362707] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.408504] (-) TimerEvent: {}
+[3.508771] (-) TimerEvent: {}
+[3.609023] (-) TimerEvent: {}
+[3.709331] (-) TimerEvent: {}
+[3.746836] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[3.809434] (-) TimerEvent: {}
+[3.909720] (-) TimerEvent: {}
+[3.915291] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.927085] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.956689] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.009830] (-) TimerEvent: {}
+[4.025665] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.086692] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.109904] (-) TimerEvent: {}
+[4.141062] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[4.210017] (-) TimerEvent: {}
+[4.310341] (-) TimerEvent: {}
+[4.410800] (-) TimerEvent: {}
+[4.511070] (-) TimerEvent: {}
+[4.611387] (-) TimerEvent: {}
+[4.711562] (-) TimerEvent: {}
+[4.811878] (-) TimerEvent: {}
+[4.912185] (-) TimerEvent: {}
+[5.012427] (-) TimerEvent: {}
+[5.086453] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[5.112539] (-) TimerEvent: {}
+[5.212865] (-) TimerEvent: {}
+[5.313284] (-) TimerEvent: {}
+[5.413587] (-) TimerEvent: {}
+[5.513883] (-) TimerEvent: {}
+[5.614195] (-) TimerEvent: {}
+[5.714421] (-) TimerEvent: {}
+[5.814642] (-) TimerEvent: {}
+[5.914887] (-) TimerEvent: {}
+[6.015185] (-) TimerEvent: {}
+[6.115583] (-) TimerEvent: {}
+[6.215968] (-) TimerEvent: {}
+[6.316377] (-) TimerEvent: {}
+[6.416684] (-) TimerEvent: {}
+[6.516979] (-) TimerEvent: {}
+[6.617340] (-) TimerEvent: {}
+[6.717675] (-) TimerEvent: {}
+[6.817951] (-) TimerEvent: {}
+[6.918238] (-) TimerEvent: {}
+[7.018561] (-) TimerEvent: {}
+[7.118850] (-) TimerEvent: {}
+[7.219088] (-) TimerEvent: {}
+[7.319370] (-) TimerEvent: {}
+[7.361034] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.419493] (-) TimerEvent: {}
+[7.519776] (-) TimerEvent: {}
+[7.620024] (-) TimerEvent: {}
+[7.720289] (-) TimerEvent: {}
+[7.820496] (-) TimerEvent: {}
+[7.920729] (-) TimerEvent: {}
+[8.020993] (-) TimerEvent: {}
+[8.121262] (-) TimerEvent: {}
+[8.194276] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.221381] (-) TimerEvent: {}
+[8.270181] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[8.278187] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[8.321492] (-) TimerEvent: {}
+[8.396851] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[8.397352] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[8.397462] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[8.397556] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[8.421585] (-) TimerEvent: {}
+[8.457044] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[8.521680] (-) TimerEvent: {}
+[8.621965] (-) TimerEvent: {}
+[8.722223] (-) TimerEvent: {}
+[8.822507] (-) TimerEvent: {}
+[8.922812] (-) TimerEvent: {}
+[9.023108] (-) TimerEvent: {}
+[9.123399] (-) TimerEvent: {}
+[9.223593] (-) TimerEvent: {}
+[9.323791] (-) TimerEvent: {}
+[9.424054] (-) TimerEvent: {}
+[9.447424] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.524155] (-) TimerEvent: {}
+[9.624457] (-) TimerEvent: {}
+[9.724728] (-) TimerEvent: {}
+[9.824989] (-) TimerEvent: {}
+[9.925229] (-) TimerEvent: {}
+[10.025539] (-) TimerEvent: {}
+[10.052339] (ros2_aruco_interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[10.069357] (ros2_aruco_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.080992] (ros2_aruco_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.125600] (-) TimerEvent: {}
+[10.225809] (-) TimerEvent: {}
+[10.232666] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.325880] (-) TimerEvent: {}
+[10.426089] (-) TimerEvent: {}
+[10.526397] (-) TimerEvent: {}
+[10.626684] (-) TimerEvent: {}
+[10.726987] (-) TimerEvent: {}
+[10.827294] (-) TimerEvent: {}
+[10.927589] (-) TimerEvent: {}
+[11.027877] (-) TimerEvent: {}
+[11.128182] (-) TimerEvent: {}
+[11.195120] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[11.228184] (-) TimerEvent: {}
+[11.328415] (-) TimerEvent: {}
+[11.428702] (-) TimerEvent: {}
+[11.429348] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco_interfaces\n'}
+[11.443363] (ros2_aruco_interfaces) CommandEnded: {'returncode': 0}
+[11.444829] (ros2_aruco_interfaces) JobProgress: {'identifier': 'ros2_aruco_interfaces', 'progress': 'build'}
+[11.446498] (ros2_aruco_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco_interfaces', '--', '-j32', '-l32'], 'cwd': '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco_interfaces', 'env': OrderedDict([('ARCH', 'x86_64'), ('QT_SCALE_FACTOR', '1'), ('USER', 'ee106a-abl'), ('HOSTNAME', 'ros2'), ('XDG_SESSION_TYPE', 'x11'), ('MASTERDIR', '/home/ff/ee106a'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('XDG_CACHE_HOME', '/home/cc/ee106a/fa26/class/ee106a-abl/.cache'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cc/ee106a/fa26/class/ee106a-abl'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge:appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('EE106_UR_ROBOT_IP', '192.168.1.102'), ('DISTROBOX_ENTER_PATH', '/usr/local/bin/distrobox-enter'), ('SYSTEMD_EXEC_PID', '64478'), ('NNTPSERVER', 'news.csua.berkeley.edu'), ('VISUAL', 'emacs'), ('XDG_STATE_HOME', '/home/cc/ee106a/fa26/class/ee106a-abl/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/90902/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/ff/ee106a/robot_workspaces/ur/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ee106a-abl'), ('MASTER', 'ee106a'), ('WINDOWID', '37748742'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('USERNAME', 'ee106a-abl'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', '139'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/humble/bin:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/share/b/grading/bin:/share/b/grading/sbin::/share/b/bin:/home/ff/ee106a/venvs/all:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/share/b/grading/bin:/share/b/grading/sbin::/share/b/bin:/home/ff/ee106a/venvs/all'), ('SESSION_MANAGER', 'local/c105-8:@/tmp/.ICE-unix/64572,unix/c105-8:/tmp/.ICE-unix/64572'), ('OS', 'Linux'), ('XDG_RUNTIME_DIR', '/run/user/90902'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_DATA_HOME', '/home/cc/ee106a/fa26/class/ee106a-abl/.local/share'), ('XDG_CONFIG_HOME', '/home/cc/ee106a/fa26/class/ee106a-abl/.config'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/run/user/90902/gdm/Xauthority'), ('SSH_AUTH_SOCK', '/run/user/90902/keyring/ssh'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('EE106_UR_ROBOT_NAME', 'astroboy'), ('GDMSESSION', 'mate'), ('GPG_AGENT_INFO', '/run/user/90902/gnupg/S.gpg-agent:0:1'), ('CONFIG_SHELL', '/usr/bin/ksh'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco_interfaces'), ('EE106_ENV_SETUP', 'ur_ros2'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/mate:/usr/share/mate:/usr/share/gnome:/home/cc/ee106a/fa26/class/ee106a-abl/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/usr/local/share:/usr/share'), ('PYTHONPATH', '/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('MANPATH', '/usr/local/man:/usr/man:/usr/X11/man:/usr/local/man:/usr/man:/usr/X11/man::/share/b/grading/man:/share/b/grading/man'), ('VTE_VERSION', '6800'), ('EDITOR', 'emacs'), ('QT_FONT_DPI', '122'), ('CMAKE_PREFIX_PATH', '/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble')]), 'shell': False}
+[11.528783] (-) TimerEvent: {}
+[11.629085] (-) TimerEvent: {}
+[11.649253] (ros2_aruco_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[11.698953] (ros2_aruco_interfaces) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[11.699859] (ros2_aruco_interfaces) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[11.729242] (-) TimerEvent: {}
+[11.737040] (ros2_aruco_interfaces) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_copy_ros2_aruco_interfaces\n'}
+[11.829353] (-) TimerEvent: {}
+[11.929628] (-) TimerEvent: {}
+[11.985090] (ros2_aruco_interfaces) StdoutLine: {'line': b'[  9%] Built target ros2_aruco_interfaces__cpp\n'}
+[11.986308] (ros2_aruco_interfaces) StdoutLine: {'line': b'[  9%] Built target ros2_aruco_interfaces__rs\n'}
+[11.997562] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.c.o\x1b[0m\n'}
+[12.029713] (-) TimerEvent: {}
+[12.043012] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[12.043492] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[12.044241] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.129806] (-) TimerEvent: {}
+[12.230195] (-) TimerEvent: {}
+[12.330526] (-) TimerEvent: {}
+[12.430800] (-) TimerEvent: {}
+[12.443778] (ros2_aruco_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[12.444873] (ros2_aruco_interfaces) StdoutLine: {'line': b'creating ros2_aruco_interfaces.egg-info\n'}
+[12.447064] (ros2_aruco_interfaces) StdoutLine: {'line': b'writing ros2_aruco_interfaces.egg-info/PKG-INFO\n'}
+[12.450704] (ros2_aruco_interfaces) StdoutLine: {'line': b'writing dependency_links to ros2_aruco_interfaces.egg-info/dependency_links.txt\n'}
+[12.454824] (ros2_aruco_interfaces) StdoutLine: {'line': b'writing top-level names to ros2_aruco_interfaces.egg-info/top_level.txt\n'}
+[12.457877] (ros2_aruco_interfaces) StdoutLine: {'line': b"writing manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'\n"}
+[12.463899] (ros2_aruco_interfaces) StdoutLine: {'line': b"reading manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'\n"}
+[12.465511] (ros2_aruco_interfaces) StdoutLine: {'line': b"writing manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'\n"}
+[12.472217] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libros2_aruco_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[12.491133] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 25%] Built target ament_cmake_python_build_ros2_aruco_interfaces_egg\n'}
+[12.530881] (-) TimerEvent: {}
+[12.531468] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 25%] Built target ros2_aruco_interfaces__rosidl_generator_c\n'}
+[12.556543] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.556692] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[12.557603] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[12.582350] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_aruco_interfaces/msg/aruco_markers__type_support.cpp.o\x1b[0m\n'}
+[12.616251] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_aruco_interfaces/msg/detail/dds_fastrtps/aruco_markers__type_support.cpp.o\x1b[0m\n'}
+[12.630959] (-) TimerEvent: {}
+[12.641428] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.cpp.o\x1b[0m\n'}
+[12.731086] (-) TimerEvent: {}
+[12.831351] (-) TimerEvent: {}
+[12.850742] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_aruco_interfaces/msg/aruco_markers__type_support.cpp.o\x1b[0m\n'}
+[12.874630] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support_c.cpp.o\x1b[0m\n'}
+[12.875186] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.c.o\x1b[0m\n'}
+[12.900068] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[12.931454] (-) TimerEvent: {}
+[12.943117] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking C shared library libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[12.950874] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[12.965977] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 62%] Built target ros2_aruco_interfaces__rosidl_typesupport_c\n'}
+[12.997822] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 62%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c\n'}
+[13.008008] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 62%] Built target ros2_aruco_interfaces__rosidl_typesupport_cpp\n'}
+[13.031517] (-) TimerEvent: {}
+[13.081918] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[13.094210] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[13.131612] (-) TimerEvent: {}
+[13.151219] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[13.163003] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 71%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[13.178014] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 71%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[13.231725] (-) TimerEvent: {}
+[13.259784] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 71%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[13.331835] (-) TimerEvent: {}
+[13.332809] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 71%] Built target ros2_aruco_interfaces\n'}
+[13.404094] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[13.431911] (-) TimerEvent: {}
+[13.532169] (-) TimerEvent: {}
+[13.632322] (-) TimerEvent: {}
+[13.715862] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 75%] Built target ros2_aruco_interfaces__py\n'}
+[13.732428] (-) TimerEvent: {}
+[13.798856] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros2_aruco_interfaces/msg/_aruco_markers_s.c.o\x1b[0m\n'}
+[13.832522] (-) TimerEvent: {}
+[13.932784] (-) TimerEvent: {}
+[14.014249] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros2_aruco_interfaces/libros2_aruco_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[14.032896] (-) TimerEvent: {}
+[14.133239] (-) TimerEvent: {}
+[14.145189] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 81%] Built target ros2_aruco_interfaces__rosidl_generator_py\n'}
+[14.233346] (-) TimerEvent: {}
+[14.250539] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.250804] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.251525] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.333421] (-) TimerEvent: {}
+[14.392514] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.398766] (ros2_aruco_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.399259] (ros2_aruco_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.433506] (-) TimerEvent: {}
+[14.498670] (ros2_aruco_interfaces) StdoutLine: {'line': b'[100%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[14.503815] (ros2_aruco_interfaces) StdoutLine: {'line': b'[100%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[14.505265] (ros2_aruco_interfaces) StdoutLine: {'line': b'[100%] Built target ros2_aruco_interfaces__rosidl_typesupport_c__pyext\n'}
+[14.533609] (-) TimerEvent: {}
+[14.565624] (ros2_aruco_interfaces) CommandEnded: {'returncode': 0}
+[14.568301] (ros2_aruco_interfaces) JobProgress: {'identifier': 'ros2_aruco_interfaces', 'progress': 'install'}
+[14.589444] (ros2_aruco_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco_interfaces'], 'cwd': '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco_interfaces', 'env': OrderedDict([('ARCH', 'x86_64'), ('QT_SCALE_FACTOR', '1'), ('USER', 'ee106a-abl'), ('HOSTNAME', 'ros2'), ('XDG_SESSION_TYPE', 'x11'), ('MASTERDIR', '/home/ff/ee106a'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('XDG_CACHE_HOME', '/home/cc/ee106a/fa26/class/ee106a-abl/.cache'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cc/ee106a/fa26/class/ee106a-abl'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge:appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('EE106_UR_ROBOT_IP', '192.168.1.102'), ('DISTROBOX_ENTER_PATH', '/usr/local/bin/distrobox-enter'), ('SYSTEMD_EXEC_PID', '64478'), ('NNTPSERVER', 'news.csua.berkeley.edu'), ('VISUAL', 'emacs'), ('XDG_STATE_HOME', '/home/cc/ee106a/fa26/class/ee106a-abl/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/90902/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/ff/ee106a/robot_workspaces/ur/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ee106a-abl'), ('MASTER', 'ee106a'), ('WINDOWID', '37748742'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('USERNAME', 'ee106a-abl'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', '139'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/humble/bin:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/share/b/grading/bin:/share/b/grading/sbin::/share/b/bin:/home/ff/ee106a/venvs/all:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/share/b/grading/bin:/share/b/grading/sbin::/share/b/bin:/home/ff/ee106a/venvs/all'), ('SESSION_MANAGER', 'local/c105-8:@/tmp/.ICE-unix/64572,unix/c105-8:/tmp/.ICE-unix/64572'), ('OS', 'Linux'), ('XDG_RUNTIME_DIR', '/run/user/90902'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_DATA_HOME', '/home/cc/ee106a/fa26/class/ee106a-abl/.local/share'), ('XDG_CONFIG_HOME', '/home/cc/ee106a/fa26/class/ee106a-abl/.config'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/run/user/90902/gdm/Xauthority'), ('SSH_AUTH_SOCK', '/run/user/90902/keyring/ssh'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('EE106_UR_ROBOT_NAME', 'astroboy'), ('GDMSESSION', 'mate'), ('GPG_AGENT_INFO', '/run/user/90902/gnupg/S.gpg-agent:0:1'), ('CONFIG_SHELL', '/usr/bin/ksh'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/ros2_aruco_interfaces'), ('EE106_ENV_SETUP', 'ur_ros2'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/mate:/usr/share/mate:/usr/share/gnome:/home/cc/ee106a/fa26/class/ee106a-abl/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/usr/local/share:/usr/share'), ('PYTHONPATH', '/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('MANPATH', '/usr/local/man:/usr/man:/usr/X11/man:/usr/local/man:/usr/man:/usr/X11/man::/share/b/grading/man:/share/b/grading/man'), ('VTE_VERSION', '6800'), ('EDITOR', 'emacs'), ('QT_FONT_DPI', '122'), ('CMAKE_PREFIX_PATH', '/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble')]), 'shell': False}
+[14.605991] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.615115] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ament_index/resource_index/rosidl_interfaces/ros2_aruco_interfaces\n'}
+[14.633648] (-) TimerEvent: {}
+[14.673367] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces\n'}
+[14.680254] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg\n'}
+[14.685246] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[14.690920] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail\n'}
+[14.696066] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.h\n'}
+[14.702029] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__struct.h\n'}
+[14.708684] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.c\n'}
+[14.715021] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.h\n'}
+[14.721137] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/aruco_markers.h\n'}
+[14.731516] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/library_path.sh\n'}
+[14.733707] (-) TimerEvent: {}
+[14.739723] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/library_path.dsv\n'}
+[14.748823] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_c.so\n'}
+[14.757847] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_c.so" to ""\n'}
+[14.758708] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces\n'}
+[14.760468] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg\n'}
+[14.762216] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[14.767949] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail\n'}
+[14.769587] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_fastrtps_c.h\n'}
+[14.776103] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[14.785222] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.786065] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces\n'}
+[14.787858] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg\n'}
+[14.789527] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[14.795466] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/aruco_markers.hpp\n'}
+[14.801582] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail\n'}
+[14.803525] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.hpp\n'}
+[14.809723] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__traits.hpp\n'}
+[14.815968] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__builder.hpp\n'}
+[14.822381] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__struct.hpp\n'}
+[14.828549] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces\n'}
+[14.830262] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg\n'}
+[14.831910] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail\n'}
+[14.833764] (-) TimerEvent: {}
+[14.833998] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.839977] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/dds_fastrtps\n'}
+[14.844866] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[14.851446] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[14.861524] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[14.862291] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces\n'}
+[14.863991] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg\n'}
+[14.865625] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[14.871797] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail\n'}
+[14.874009] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_introspection_c.h\n'}
+[14.879889] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.c\n'}
+[14.886432] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[14.895543] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.897002] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_c.so\n'}
+[14.906119] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[14.907144] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces\n'}
+[14.908800] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg\n'}
+[14.910619] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail\n'}
+[14.912325] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.918328] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.cpp\n'}
+[14.924963] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[14.933833] (-) TimerEvent: {}
+[14.934667] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[14.936064] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_cpp.so\n'}
+[14.945006] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[14.946342] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/pythonpath.sh\n'}
+[14.952523] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/pythonpath.dsv\n'}
+[14.958763] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info\n'}
+[14.967357] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[14.973319] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[14.979936] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[14.986170] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[14.992903] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces\n'}
+[14.998764] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[15.005308] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.011904] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[15.018768] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[15.025080] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg\n'}
+[15.030785] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/__init__.py\n'}
+[15.033866] (-) TimerEvent: {}
+[15.037314] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/_aruco_markers.py\n'}
+[15.044083] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/_aruco_markers_s.c\n'}
+[15.050778] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.057547] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/libros2_aruco_interfaces__rosidl_generator_py.so\n'}
+[15.064168] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/__init__.py\n'}
+[15.070216] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.133955] (-) TimerEvent: {}
+[15.213116] (ros2_aruco_interfaces) StdoutLine: {'line': b"Listing '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces'...\n"}
+[15.213322] (ros2_aruco_interfaces) StdoutLine: {'line': b"Compiling '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/__init__.py'...\n"}
+[15.213418] (ros2_aruco_interfaces) StdoutLine: {'line': b"Listing '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg'...\n"}
+[15.213507] (ros2_aruco_interfaces) StdoutLine: {'line': b"Compiling '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/__init__.py'...\n"}
+[15.213585] (ros2_aruco_interfaces) StdoutLine: {'line': b"Compiling '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/_aruco_markers.py'...\n"}
+[15.223590] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.234019] (-) TimerEvent: {}
+[15.234295] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.238108] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.249512] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.253590] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.264035] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.265525] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_py.so\n'}
+[15.275724] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_py.so" to ""\n'}
+[15.281302] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ament_index/resource_index/rust_packages/ros2_aruco_interfaces\n'}
+[15.287516] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust\n'}
+[15.292777] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/src\n'}
+[15.298152] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/src/msg\n'}
+[15.304040] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/src/msg/rmw.rs\n'}
+[15.310456] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/src/msg.rs\n'}
+[15.316892] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/src/lib.rs\n'}
+[15.323658] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/build.rs\n'}
+[15.330620] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/Cargo.toml\n'}
+[15.334273] (-) TimerEvent: {}
+[15.341098] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/msg/ArucoMarkers.idl\n'}
+[15.347581] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/msg/ArucoMarkers.msg\n'}
+[15.358374] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ament_index/resource_index/package_run_dependencies/ros2_aruco_interfaces\n'}
+[15.369030] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ament_index/resource_index/parent_prefix_path/ros2_aruco_interfaces\n'}
+[15.375614] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/ament_prefix_path.sh\n'}
+[15.384833] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/ament_prefix_path.dsv\n'}
+[15.391275] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/path.sh\n'}
+[15.400243] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/path.dsv\n'}
+[15.407117] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.bash\n'}
+[15.414177] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.sh\n'}
+[15.421077] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.zsh\n'}
+[15.427704] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.dsv\n'}
+[15.434330] (-) TimerEvent: {}
+[15.434539] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv\n'}
+[15.446019] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ament_index/resource_index/packages/ros2_aruco_interfaces\n'}
+[15.456630] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cExport.cmake\n'}
+[15.463923] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[15.471333] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[15.478644] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[15.486431] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cppExport.cmake\n'}
+[15.493740] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[15.501203] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[15.508515] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[15.516697] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[15.523796] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[15.530712] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[15.534402] (-) TimerEvent: {}
+[15.537582] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[15.544462] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[15.551577] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[15.558288] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[15.565381] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_pyExport.cmake\n'}
+[15.572213] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[15.578842] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[15.586050] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.592885] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[15.599479] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[15.606079] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[15.612608] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[15.619220] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[15.625827] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[15.632441] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfacesConfig.cmake\n'}
+[15.634500] (-) TimerEvent: {}
+[15.638744] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfacesConfig-version.cmake\n'}
+[15.646340] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.xml\n'}
+[15.662393] (ros2_aruco_interfaces) CommandEnded: {'returncode': 0}
+[15.734617] (-) TimerEvent: {}
+[15.789106] (ros2_aruco_interfaces) JobEnded: {'identifier': 'ros2_aruco_interfaces', 'rc': 0}
+[15.798974] (-) EventReactorShutdown: {}

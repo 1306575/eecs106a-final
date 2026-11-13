@@ -1,0 +1,23 @@
+[1.135s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/visual_servoing': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/visual_servoing build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/install.log --install-scripts $base/lib/visual_servoing --single-version-externally-managed install_data
+[1.348s] running egg_info
+[1.352s] writing ../build/visual_servoing/visual_servoing.egg-info/PKG-INFO
+[1.357s] writing dependency_links to ../build/visual_servoing/visual_servoing.egg-info/dependency_links.txt
+[1.357s] writing entry points to ../build/visual_servoing/visual_servoing.egg-info/entry_points.txt
+[1.364s] writing requirements to ../build/visual_servoing/visual_servoing.egg-info/requires.txt
+[1.368s] writing top-level names to ../build/visual_servoing/visual_servoing.egg-info/top_level.txt
+[1.375s] reading manifest file '../build/visual_servoing/visual_servoing.egg-info/SOURCES.txt'
+[1.375s] writing manifest file '../build/visual_servoing/visual_servoing.egg-info/SOURCES.txt'
+[1.375s] running build
+[1.375s] running build_py
+[1.376s] running install
+[1.376s] running install_lib
+[1.385s] running install_data
+[1.390s] running install_egg_info
+[1.394s] removing '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing-0.0.0-py3.10.egg-info' (and everything under it)
+[1.399s] Copying ../build/visual_servoing/visual_servoing.egg-info to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing-0.0.0-py3.10.egg-info
+[1.439s] running install_scripts
+[1.462s] Installing JointTrajectory script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/visual_servoing
+[1.468s] Installing main script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/visual_servoing
+[1.469s] Installing tf script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/visual_servoing
+[1.473s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/install.log'
+[1.541s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/visual_servoing' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/visual_servoing build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/install.log --install-scripts $base/lib/visual_servoing --single-version-externally-managed install_data

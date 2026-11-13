@@ -59,7 +59,7 @@ class StaticTransformPublisher(Node):
 
         q2 = R.from_matrix(rotation_matrix_goal).as_quat()
 
-        self.transform_goal.header.frame_id = "ar_marker_2"          #TODO: set this to whichever small tag you're using
+        self.transform_goal.header.frame_id = "ar_marker_1"          #TODO: set this to whichever small tag you're using
         self.transform_goal.child_frame_id = 'goal_pose'
 
         self.transform_goal.transform.translation.x = float(translation_goal[0])

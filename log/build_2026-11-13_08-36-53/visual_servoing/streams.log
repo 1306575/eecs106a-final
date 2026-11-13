@@ -1,0 +1,59 @@
+[2.668s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/visual_servoing': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/visual_servoing build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/install.log --install-scripts $base/lib/visual_servoing --single-version-externally-managed install_data
+[2.879s] running egg_info
+[2.879s] creating ../build/visual_servoing/visual_servoing.egg-info
+[2.882s] writing ../build/visual_servoing/visual_servoing.egg-info/PKG-INFO
+[2.887s] writing dependency_links to ../build/visual_servoing/visual_servoing.egg-info/dependency_links.txt
+[2.890s] writing entry points to ../build/visual_servoing/visual_servoing.egg-info/entry_points.txt
+[2.893s] writing requirements to ../build/visual_servoing/visual_servoing.egg-info/requires.txt
+[2.895s] writing top-level names to ../build/visual_servoing/visual_servoing.egg-info/top_level.txt
+[2.898s] writing manifest file '../build/visual_servoing/visual_servoing.egg-info/SOURCES.txt'
+[2.906s] reading manifest file '../build/visual_servoing/visual_servoing.egg-info/SOURCES.txt'
+[2.908s] writing manifest file '../build/visual_servoing/visual_servoing.egg-info/SOURCES.txt'
+[2.909s] running build
+[2.909s] running build_py
+[2.910s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build
+[2.911s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib
+[2.913s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing
+[2.914s] copying visual_servoing/trajectories.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing
+[2.919s] copying visual_servoing/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing
+[2.925s] copying visual_servoing/controller.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing
+[2.930s] copying visual_servoing/kin_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing
+[2.935s] copying visual_servoing/jacobian_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing
+[2.940s] copying visual_servoing/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing
+[2.944s] copying visual_servoing/static_tf_transform.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing
+[2.950s] copying visual_servoing/JointTrajectory.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing
+[2.955s] running install
+[2.956s] running install_lib
+[2.960s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing
+[2.962s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing
+[2.967s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/jacobian_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing
+[2.973s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing
+[2.979s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/JointTrajectory.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing
+[2.986s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/kin_func_skeleton.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing
+[2.991s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/controller.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing
+[2.997s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/trajectories.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing
+[3.003s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build/lib/visual_servoing/static_tf_transform.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing
+[3.011s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/__init__.py to __init__.cpython-310.pyc
+[3.018s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/jacobian_func_skeleton.py to jacobian_func_skeleton.cpython-310.pyc
+[3.025s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/main.py to main.cpython-310.pyc
+[3.037s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/JointTrajectory.py to JointTrajectory.cpython-310.pyc
+[3.050s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/kin_func_skeleton.py to kin_func_skeleton.cpython-310.pyc
+[3.059s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/controller.py to controller.cpython-310.pyc
+[3.067s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/trajectories.py to trajectories.cpython-310.pyc
+[3.076s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing/static_tf_transform.py to static_tf_transform.cpython-310.pyc
+[3.083s] running install_data
+[3.084s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/ament_index
+[3.085s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/ament_index/resource_index
+[3.087s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/ament_index/resource_index/packages
+[3.089s] copying resource/visual_servoing -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/ament_index/resource_index/packages
+[3.094s] copying package.xml -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/visual_servoing
+[3.099s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/visual_servoing/launch
+[3.100s] copying launch/lab7.launch.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/share/visual_servoing/launch
+[3.105s] running install_egg_info
+[3.108s] Copying ../build/visual_servoing/visual_servoing.egg-info to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages/visual_servoing-0.0.0-py3.10.egg-info
+[3.145s] running install_scripts
+[3.163s] Installing JointTrajectory script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/visual_servoing
+[3.168s] Installing main script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/visual_servoing
+[3.172s] Installing tf script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/visual_servoing
+[3.175s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/install.log'
+[3.207s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/visual_servoing' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/visual_servoing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/visual_servoing build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/visual_servoing/install.log --install-scripts $base/lib/visual_servoing --single-version-externally-managed install_data

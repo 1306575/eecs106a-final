@@ -1,0 +1,5 @@
+[console_scripts]
+JointTrajectory = visual_servoing.JointTrajectory:main
+main = visual_servoing.main:main
+tf = visual_servoing.static_tf_transform:main
+
