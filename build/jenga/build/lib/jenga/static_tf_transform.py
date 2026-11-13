@@ -72,6 +72,8 @@ class StaticTransformPublisher(Node):
         self.transform_camera.header.stamp = self.get_clock().now().to_msg()
         self.transform_jenga.header.stamp = self.get_clock().now().to_msg()
         self.br.sendTransform([self.transform_camera, self.transform_jenga])
+        #self.br.sendTransform([self.transform_jenga])
+
 
 def main():
     rclpy.init()
