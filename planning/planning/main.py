@@ -25,17 +25,24 @@ TAPE_SETTLE_SEC = 1.0  # wait this long after getting back to the start pose bef
 # How far below wrist_3_link the fingertips are. Measure this on your gripper!
 # The IK targets are for wrist_3_link, so add this to where you want the fingertips to be.
 GRIPPER_LENGTH = 0.14
-PRE_GRASP_CLEARANCE = 0.05  # how far above the cube the fingertips start
+PRE_GRASP_CLEARANCE = 0.1  # how far above the cube the fingertips start
 TABLE_CLEARANCE = 0.01  # never bring the fingertips (or the held cube) closer than this to the table
 
-class UR7e_CubeGrasp(Node):
+BLOCK_HEIGHT = 0.025
+BLOCK_WIDTH = 0.04
+BLOCK_LENGTH = 0.119
+PUSH_AMT = 0.06
+PULL_AMT = 0.1
+
+class UR7e_Movement(Node):
     def __init__(self):
         super().__init__('cube_grasp')
 
-        self.cube_pub = self.create_subscription(PointStamped, '/cube_pose', self.cube_callback, 1)
-        self.cube_height_sub = self.create_subscription(Float32, '/cube_height', self.cube_height_callback, 1)
-        self.tape_sub = self.create_subscription(PointStamped, '/tape_pose', self.tape_callback, 1)
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
+
         self.joint_state_sub = self.create_subscription(JointState, '/joint_states', self.joint_state_callback, 1)
+        # self.command_sub = self.create_subscription(Command, '/command', self.command_callback, 1)
 
         self.exec_ac = ActionClient(
             self, FollowJointTrajectory,
@@ -45,16 +52,13 @@ class UR7e_CubeGrasp(Node):
         self.gripper_cli = self.create_client(Trigger, '/toggle_gripper')
         self.switch_cli = self.create_client(SwitchController, '/controller_manager/switch_controller')
 
-        self.cube_pose = None
-        self.cube_height = None
-        self.grasp_height = None  # how far above the bottom of the cube we grabbed it
-        self.current_plan = None
+        self.tower_pos = None
+        self.tower_rot = None
+        self.block_level = None
+        self.block_index = None
+        
         self.joint_state = None
         self.start_joints = None  # where you free drove the robot to, recorded on startup
-
-        self.waiting_for_tape = False
-        self.tape_wait_until = None
-        self.create_timer(3.0, self._check_tape_wait)
 
         self.ik_planner = IKPlanner()
 
@@ -69,22 +73,25 @@ class UR7e_CubeGrasp(Node):
             self.start_joints = copy.deepcopy(msg)
             self.get_logger().info('Recorded the start pose, we will come back here to look for the tape')
 
-    def cube_height_callback(self, msg: Float32):
-        self.cube_height = msg.data
+    def command_callback(self, command):
+        current_command = command.command
+        if current_command == "pull":
+            self.pull_callback(command.tower_pose, command.block_level, command.block_index)
 
-    def cube_callback(self, cube_pose):
-        if self.cube_pose is not None:
+    def pull_callback(self, tower_pose, block_level, block_index):
+        if self.tower_pos is not None or self.tower_rot is not None:
             return
 
-        if self.joint_state is None or self.cube_height is None:
-            self.get_logger().info("No joint state or cube height yet, cannot proceed")
-            return
-
-        self.cube_pose = cube_pose
+        self.tower_pos = tower_pose.transform.translation
+        self.tower_rot = tower_pose.transform.rotation
+        self.block_level = block_level
+        self.block_index = block_index
         # /cube_pose is the middle of the cube, and /cube_height is how tall it is
-        x, y, z = cube_pose.point.x, cube_pose.point.y, cube_pose.point.z
-        h = self.cube_height
-        self.get_logger().info(f'Cube at ({x:.3f}, {y:.3f}, {z:.3f}), {h * 100:.1f} cm tall')
+        x, y, z = self.tower_pos.x, self.tower_pos.y, self.tower_pos.z
+        block_x = x - PUSH_AMT
+        block_y = (y - 1.5 * BLOCK_WIDTH) + (self.block_index - 0.5) * BLOCK_WIDTH
+        block_z = z + (self.block_level - 0.5) * BLOCK_HEIGHT
+        self.get_logger().info(f'Tower at ({x:.3f}, {y:.3f}, {z:.3f})')
 
         # -----------------------------------------------------------
         # TODO: In the following section you will add joint angles to the job queue.
@@ -92,14 +99,19 @@ class UR7e_CubeGrasp(Node):
         # Think about you will leverage the IK planner to get joint configurations for the cube grasping task.
         # To understand how the queue works, refer to the execute_jobs() function below.
         # -----------------------------------------------------------
-
         # 1) Move to Pre-Grasp Position (gripper above the cube)
         '''
         The fingertips should start PRE_GRASP_CLEARANCE above the top of the cube.
         Remember the IK target is wrist_3_link, which is GRIPPER_LENGTH above the fingertips.
         '''
-        true_z = z + GRIPPER_LENGTH + PRE_GRASP_CLEARANCE + h/2
-        pre_grasp_ik = self.ik_planner.compute_ik(self.joint_state, x, y, true_z)
+
+        wrist_3_pose = self.tf_buffer.lookup_transform("base_link", "wrist_3_link", Time(), timeout=Duration(seconds=0.5))
+        current_z = wrist_3_pose.transform.translation.z
+        pre_grasp_ik_tall = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, current_z, 0.0, 0.7071, -0.7071, 0.0)
+        self.job_queue.append(pre_grasp_ik_tall)
+
+        true_z = GRIPPER_LENGTH + PRE_GRASP_CLEARANCE + block_z
+        pre_grasp_ik = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, true_z)
         self.job_queue.append(pre_grasp_ik)
 
         # 2) Move to Grasp Position (lower the gripper to the cube)
@@ -108,64 +120,25 @@ class UR7e_CubeGrasp(Node):
         than TABLE_CLEARANCE to the table. Save how far above the bottom of the cube the
         fingertips are in self.grasp_height, you'll need it to put the cube down.
         '''
-        self.grasp_height = z + GRIPPER_LENGTH + 0.01
-        grasp_ik = self.ik_planner.compute_ik(self.joint_state, x, y, self.grasp_height)
+        grasp_height = block_z + GRIPPER_LENGTH + 0.01
+        grasp_ik = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, grasp_height)
         self.job_queue.append(grasp_ik)
 
         # 3) Close the gripper. See job_queue entries defined in init above for how to add this action.
         self.job_queue.append('toggle_grip')
 
         # 4) Move back to Pre-Grasp Position
-        post_grasp_ik = self.ik_planner.compute_ik(self.joint_state, x, y, true_z)
+        pull_x = block_x + PULL_AMT
+        post_grasp_ik = self.ik_planner.compute_ik(self.joint_state, pull_x, block_y, grasp_height)
         self.job_queue.append(post_grasp_ik)
+
+        self.job_queue.append(pre_grasp_ik_tall)
 
         # 5) Go back to the start pose (self.start_joints) so the camera can see the table again
         self.job_queue.append(self.start_joints)
 
-        # 6) Look for the tape. plan_place() gets called once we have a fresh /tape_pose
-        self.job_queue.append('find_tape')
-
         self.execute_jobs()
 
-    def tape_callback(self, tape_pose):
-        if not self.waiting_for_tape:
-            return
-        # ignore anything from before the arm settled at the start pose
-        if Time.from_msg(tape_pose.header.stamp) < self.tape_wait_until:
-            return
-        self.waiting_for_tape = False
-        self.plan_place(tape_pose)
-
-    def plan_place(self, tape_pose):
-        x, y = tape_pose.point.x, tape_pose.point.y
-        self.get_logger().info(f'Tape at ({x:.3f}, {y:.3f}, {tape_pose.point.z:.3f})')
-
-        # -----------------------------------------------------------
-        # TODO: Add the jobs to put the cube down on the tape and come back.
-        # The tape is flat on the table, so tape_pose.point.z is the height of the table
-        # there. The fingertips are self.grasp_height above the bottom of the cube, so to
-        # set the cube down, put them that far above the tape, plus TABLE_CLEARANCE so the
-        # cube doesn't get pushed into the table.
-        # -----------------------------------------------------------
-
-        # 1) Move above the tape (so the bottom of the cube clears the table)
-        above_tape = self.ik_planner.compute_ik(self.joint_state, x, y, self.grasp_height + 0.05)
-        self.job_queue.append(above_tape)
-
-        # 2) Lower the cube down onto the tape
-        onto_tape = self.ik_planner.compute_ik(self.joint_state, x, y, self.grasp_height + 0.01)
-        self.job_queue.append(onto_tape)
-
-        # 3) Open the gripper
-        self.job_queue.append('toggle_grip')
-
-        # 4) Move back up
-        self.job_queue.append(above_tape)
-
-        # 5) Go back to the start pose
-        self.job_queue.append(self.start_joints)
-
-        self.execute_jobs()
 
     def execute_jobs(self):
         if not self.job_queue:
@@ -189,18 +162,9 @@ class UR7e_CubeGrasp(Node):
         elif next_job == 'toggle_grip':
             self.get_logger().info("Toggling gripper")
             self._toggle_gripper()
-        elif next_job == 'find_tape':
-            self.get_logger().info("Looking for the tape...")
-            self.tape_wait_until = self.get_clock().now() + Duration(seconds=TAPE_SETTLE_SEC)
-            self.waiting_for_tape = True
-            # tape_callback takes it from here
         else:
             self.get_logger().error("Unknown job type.")
             self.execute_jobs()  # Proceed to next job
-
-    def _check_tape_wait(self):
-        if self.waiting_for_tape and self.get_clock().now() - self.tape_wait_until > Duration(seconds=4.0):
-            self.get_logger().warn('Still no tape. Check /tape_points in RViz and your HSV thresholds')
 
     def _switch_to_trajectory_controller(self):
         if not self.switch_cli.wait_for_service(timeout_sec=5.0):
@@ -264,11 +228,41 @@ class UR7e_CubeGrasp(Node):
             self.get_logger().error(f'Execution failed: {e}')
 
 
+# def main(args=None):
+#     rclpy.init(args=args)
+#     node = UR7e_Movement()
+#     rclpy.spin(node)
+#     node.destroy_node()
+
 def main(args=None):
     rclpy.init(args=args)
-    node = UR7e_CubeGrasp()
-    rclpy.spin(node)
-    node.destroy_node()
+    node = UR7e_Movement()
+
+    # Wait until joint states are received
+    while rclpy.ok() and node.joint_state is None:
+        rclpy.spin_once(node, timeout_sec=0.1)
+
+    # Create dummy tower pose
+    tower_pose = node.tf_buffer.lookup_transform("base_link", "jenga", Time(), timeout=Duration(seconds=0.5))
+
+    # Test parameters
+    block_level = 6
+    block_index = 2
+
+    node.get_logger().info("Testing pull_callback...")
+
+    node.pull_callback(tower_pose, block_level, block_index)
+
+    # Keep node alive while asynchronous jobs execute
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        if rclpy.ok():
+            rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

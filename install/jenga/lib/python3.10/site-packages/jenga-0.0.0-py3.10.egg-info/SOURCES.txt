@@ -8,14 +8,8 @@ setup.py
 ../build/jenga/jenga.egg-info/requires.txt
 ../build/jenga/jenga.egg-info/top_level.txt
 ../build/jenga/jenga.egg-info/zip-safe
-jenga/JointTrajectory.py
 jenga/__init__.py
-jenga/controller.py
-jenga/jacobian_func_skeleton.py
-jenga/kin_func_skeleton.py
-jenga/main.py
 jenga/static_tf_transform.py
-jenga/trajectories.py
 launch/jenga.launch.py
 resource/jenga
 test/test_copyright.py
