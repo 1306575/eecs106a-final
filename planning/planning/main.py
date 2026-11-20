@@ -31,7 +31,7 @@ TABLE_CLEARANCE = 0.01  # never bring the fingertips (or the held cube) closer t
 BLOCK_HEIGHT = 0.025
 BLOCK_WIDTH = 0.04
 BLOCK_LENGTH = 0.119
-PUSH_AMT = 0.06
+PULL_FROM = 0.11
 PULL_AMT = 0.1
 
 class UR7e_Movement(Node):
@@ -88,7 +88,7 @@ class UR7e_Movement(Node):
         self.block_index = block_index
         # /cube_pose is the middle of the cube, and /cube_height is how tall it is
         x, y, z = self.tower_pos.x, self.tower_pos.y, self.tower_pos.z
-        block_x = x - PUSH_AMT
+        block_x = x - PULL_FROM
         block_y = (y - 1.5 * BLOCK_WIDTH) + (self.block_index - 0.5) * BLOCK_WIDTH
         block_z = z + (self.block_level - 0.5) * BLOCK_HEIGHT
         self.get_logger().info(f'Tower at ({x:.3f}, {y:.3f}, {z:.3f})')
@@ -99,42 +99,44 @@ class UR7e_Movement(Node):
         # Think about you will leverage the IK planner to get joint configurations for the cube grasping task.
         # To understand how the queue works, refer to the execute_jobs() function below.
         # -----------------------------------------------------------
-        # 1) Move to Pre-Grasp Position (gripper above the cube)
-        '''
-        The fingertips should start PRE_GRASP_CLEARANCE above the top of the cube.
-        Remember the IK target is wrist_3_link, which is GRIPPER_LENGTH above the fingertips.
-        '''
 
+        #Move to the block X and Y, but remain at high Z
         wrist_3_pose = self.tf_buffer.lookup_transform("base_link", "wrist_3_link", Time(), timeout=Duration(seconds=0.5))
         current_z = wrist_3_pose.transform.translation.z
-        pre_grasp_ik_tall = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, current_z, 0.0, 0.7071, -0.7071, 0.0)
+        pre_grasp_ik_tall = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, current_z)
         self.job_queue.append(pre_grasp_ik_tall)
 
+        #Rotate the grasper so that it can grab the block
+        rot_matrix = np.array([[0, -1, 0],
+                               [-1 ,0, 0],
+                               [0, 0, -1]])
+        quat = R.from_matrix(rot_matrix).as_quat()
+        print(quat)
+        pre_grasp_ik_tall_rotate =  self.ik_planner.compute_ik(self.joint_state, block_x, block_y, current_z, quat[0], quat[1], quat[2], quat[3])
+        self.job_queue.append(pre_grasp_ik_tall_rotate)
+
+        #Move to the block X and block Y, and a Z that is PRE_GRASP_CLEARANCE above Z
         true_z = GRIPPER_LENGTH + PRE_GRASP_CLEARANCE + block_z
-        pre_grasp_ik = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, true_z)
+        pre_grasp_ik = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, true_z, quat[0], quat[1], quat[2], quat[3])
         self.job_queue.append(pre_grasp_ik)
 
-        # 2) Move to Grasp Position (lower the gripper to the cube)
-        '''
-        Put the fingertips at the middle of the cube (half its height), but never closer
-        than TABLE_CLEARANCE to the table. Save how far above the bottom of the cube the
-        fingertips are in self.grasp_height, you'll need it to put the cube down.
-        '''
-        grasp_height = block_z + GRIPPER_LENGTH + 0.01
-        grasp_ik = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, grasp_height)
+        #Move to grasp height
+        grasp_height = block_z + GRIPPER_LENGTH
+        grasp_ik = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, grasp_height, quat[0], quat[1], quat[2], quat[3])
         self.job_queue.append(grasp_ik)
 
-        # 3) Close the gripper. See job_queue entries defined in init above for how to add this action.
+        #Close the gripper. See job_queue entries defined in init above for how to add this action.
         self.job_queue.append('toggle_grip')
 
-        # 4) Move back to Pre-Grasp Position
-        pull_x = block_x + PULL_AMT
-        post_grasp_ik = self.ik_planner.compute_ik(self.joint_state, pull_x, block_y, grasp_height)
+        #Pull the block out
+        pull_x = block_x - PULL_AMT
+        post_grasp_ik = self.ik_planner.compute_ik(self.joint_state, pull_x, block_y, grasp_height, quat[0], quat[1], quat[2], quat[3])
         self.job_queue.append(post_grasp_ik)
 
+        #Go back to high Z
         self.job_queue.append(pre_grasp_ik_tall)
 
-        # 5) Go back to the start pose (self.start_joints) so the camera can see the table again
+        #Go back to the start pose (self.start_joints) so the camera can see the table again
         self.job_queue.append(self.start_joints)
 
         self.execute_jobs()

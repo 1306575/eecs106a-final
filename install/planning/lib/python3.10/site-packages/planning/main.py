@@ -31,7 +31,7 @@ TABLE_CLEARANCE = 0.01  # never bring the fingertips (or the held cube) closer t
 BLOCK_HEIGHT = 0.025
 BLOCK_WIDTH = 0.04
 BLOCK_LENGTH = 0.119
-PUSH_AMT = 0.06
+PULL_FROM = 0.11
 PULL_AMT = 0.1
 
 class UR7e_Movement(Node):
@@ -88,7 +88,7 @@ class UR7e_Movement(Node):
         self.block_index = block_index
         # /cube_pose is the middle of the cube, and /cube_height is how tall it is
         x, y, z = self.tower_pos.x, self.tower_pos.y, self.tower_pos.z
-        block_x = x - PUSH_AMT
+        block_x = x - PULL_FROM
         block_y = (y - 1.5 * BLOCK_WIDTH) + (self.block_index - 0.5) * BLOCK_WIDTH
         block_z = z + (self.block_level - 0.5) * BLOCK_HEIGHT
         self.get_logger().info(f'Tower at ({x:.3f}, {y:.3f}, {z:.3f})')
@@ -107,11 +107,20 @@ class UR7e_Movement(Node):
 
         wrist_3_pose = self.tf_buffer.lookup_transform("base_link", "wrist_3_link", Time(), timeout=Duration(seconds=0.5))
         current_z = wrist_3_pose.transform.translation.z
-        pre_grasp_ik_tall = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, current_z, 0.0, 0.7071, -0.7071, 0.0)
+        pre_grasp_ik_tall = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, current_z)
         self.job_queue.append(pre_grasp_ik_tall)
 
+
+        rot_matrix = np.array([[0, -1, 0],
+                               [-1 ,0, 0],
+                               [0, 0, -1]])
+        quat = R.from_matrix(rot_matrix).as_quat()
+        print(quat)
+        pre_grasp_ik_tall_rotate =  self.ik_planner.compute_ik(self.joint_state, block_x, block_y, current_z, quat[0], quat[1], quat[2], quat[3])
+        self.job_queue.append(pre_grasp_ik_tall_rotate)
+
         true_z = GRIPPER_LENGTH + PRE_GRASP_CLEARANCE + block_z
-        pre_grasp_ik = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, true_z)
+        pre_grasp_ik = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, true_z, quat[0], quat[1], quat[2], quat[3])
         self.job_queue.append(pre_grasp_ik)
 
         # 2) Move to Grasp Position (lower the gripper to the cube)
@@ -120,16 +129,16 @@ class UR7e_Movement(Node):
         than TABLE_CLEARANCE to the table. Save how far above the bottom of the cube the
         fingertips are in self.grasp_height, you'll need it to put the cube down.
         '''
-        grasp_height = block_z + GRIPPER_LENGTH + 0.01
-        grasp_ik = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, grasp_height)
+        grasp_height = block_z + GRIPPER_LENGTH
+        grasp_ik = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, grasp_height, quat[0], quat[1], quat[2], quat[3])
         self.job_queue.append(grasp_ik)
 
         # 3) Close the gripper. See job_queue entries defined in init above for how to add this action.
         self.job_queue.append('toggle_grip')
 
         # 4) Move back to Pre-Grasp Position
-        pull_x = block_x + PULL_AMT
-        post_grasp_ik = self.ik_planner.compute_ik(self.joint_state, pull_x, block_y, grasp_height)
+        pull_x = block_x - PULL_AMT
+        post_grasp_ik = self.ik_planner.compute_ik(self.joint_state, pull_x, block_y, grasp_height, quat[0], quat[1], quat[2], quat[3])
         self.job_queue.append(post_grasp_ik)
 
         self.job_queue.append(pre_grasp_ik_tall)
