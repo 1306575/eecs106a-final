@@ -16,7 +16,7 @@ from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from sensor_msgs.msg import JointState
 from tf2_ros import Buffer, TransformListener
 from scipy.spatial.transform import Rotation as R
-from command_msgs import command
+from command_msgs.srv import Command
 import numpy as np
 
 from planning.ik import IKPlanner
@@ -33,17 +33,17 @@ BLOCK_LENGTH = 0.119
 PULL_FROM = 0.11
 PULL_AMT = 0.1
 
-class Command(Node):
+class Command_Node(Node):
     def __init__(self):
         super().__init__('command')
 
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
 
-        self.service_client = self.create_client(command, 'jenga_command')
+        self.service_client = self.create_client(Command, 'jenga_command')
         while not self.service_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('service not available, waiting again...')
-        self.request = command.Request()
+        self.request = Command.Request()
 
         self.current_state = None
 
@@ -51,7 +51,6 @@ class Command(Node):
         self.request.command = command_type
         self.request.block_level = block_level
         self.request.block_index = block_index
-        self.tower_pose = self.tf_buffer.lookup_transform("base_link", "jenga", Time(), timeout=Duration(seconds=0.5))
         
         self.future = self.service_client.call_async(self.request)
         rclpy.spin_until_future_complete(self, self.future)
@@ -65,7 +64,7 @@ class Command(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = Command()
+    node = Command_Node()
 
     response = node.send_request("pull", 3, 3)
 

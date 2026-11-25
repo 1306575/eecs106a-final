@@ -16,7 +16,7 @@ from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from sensor_msgs.msg import JointState
 from tf2_ros import Buffer, TransformListener
 from scipy.spatial.transform import Rotation as R
-from command_msgs.srv import command
+from command_msgs.srv import Command
 import numpy as np
 
 from planning.ik import IKPlanner
@@ -43,7 +43,7 @@ class UR7e_Movement(Node):
         self.tf_listener = TransformListener(self.tf_buffer, self)
 
         self.joint_state_sub = self.create_subscription(JointState, '/joint_states', self.joint_state_callback, 1)
-        self.command_client = self.create_client(command, 'jenga_command', self.command_callback)
+        self.command_client = self.create_service(Command, 'jenga_command', self.command_callback)
 
         self.exec_ac = ActionClient(
             self, FollowJointTrajectory,
@@ -77,14 +77,16 @@ class UR7e_Movement(Node):
     def command_callback(self, request, response):
         current_command = request.command
         if current_command == "pull":
-            self.pull_callback(request.tower_pose, request.block_level, request.block_index)
+            self.pull_callback(request.block_level, request.block_index)
             response.done = True
         
         return response
 
-    def pull_callback(self, tower_pose, block_level, block_index):
+    def pull_callback(self, block_level, block_index):
         if self.tower_pos is not None or self.tower_rot is not None:
             return
+
+        tower_pose = self.tf_buffer.lookup_transform("base_link", "jenga", Time(), timeout=Duration(seconds=0.5))
 
         self.tower_pos = tower_pose.transform.translation
         self.tower_rot = tower_pose.transform.rotation

@@ -1,0 +1,37 @@
+[1.112s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/control': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces LD_LIBRARY_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/control build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/install.log --install-scripts $base/lib/control --single-version-externally-managed install_data
+[1.334s] running egg_info
+[1.337s] creating ../build/control/control.egg-info
+[1.340s] writing ../build/control/control.egg-info/PKG-INFO
+[1.344s] writing dependency_links to ../build/control/control.egg-info/dependency_links.txt
+[1.349s] writing entry points to ../build/control/control.egg-info/entry_points.txt
+[1.350s] writing requirements to ../build/control/control.egg-info/requires.txt
+[1.354s] writing top-level names to ../build/control/control.egg-info/top_level.txt
+[1.356s] writing manifest file '../build/control/control.egg-info/SOURCES.txt'
+[1.363s] reading manifest file '../build/control/control.egg-info/SOURCES.txt'
+[1.367s] writing manifest file '../build/control/control.egg-info/SOURCES.txt'
+[1.368s] running build
+[1.369s] running build_py
+[1.371s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/build
+[1.371s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/build/lib
+[1.371s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/build/lib/control
+[1.372s] copying control/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/build/lib/control
+[1.375s] copying control/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/build/lib/control
+[1.382s] running install
+[1.383s] running install_lib
+[1.384s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages/control
+[1.384s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/build/lib/control/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages/control
+[1.388s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/build/lib/control/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages/control
+[1.395s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages/control/__init__.py to __init__.cpython-310.pyc
+[1.403s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages/control/main.py to main.cpython-310.pyc
+[1.410s] running install_data
+[1.413s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/share/ament_index
+[1.418s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/share/ament_index/resource_index
+[1.418s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/share/ament_index/resource_index/packages
+[1.420s] copying resource/control -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/share/ament_index/resource_index/packages
+[1.425s] copying package.xml -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/share/control
+[1.426s] running install_egg_info
+[1.429s] Copying ../build/control/control.egg-info to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages/control-0.0.0-py3.10.egg-info
+[1.474s] running install_scripts
+[1.495s] Installing main script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/control
+[1.500s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/install.log'
+[1.520s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/control' returned '0': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces LD_LIBRARY_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/control build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/install.log --install-scripts $base/lib/control --single-version-externally-managed install_data

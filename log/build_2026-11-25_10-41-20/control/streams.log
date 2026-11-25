@@ -1,0 +1,24 @@
+[1.145s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/control': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces LD_LIBRARY_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/control build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/install.log --install-scripts $base/lib/control --single-version-externally-managed install_data
+[1.385s] running egg_info
+[1.388s] writing ../build/control/control.egg-info/PKG-INFO
+[1.392s] writing dependency_links to ../build/control/control.egg-info/dependency_links.txt
+[1.393s] writing entry points to ../build/control/control.egg-info/entry_points.txt
+[1.397s] writing requirements to ../build/control/control.egg-info/requires.txt
+[1.399s] writing top-level names to ../build/control/control.egg-info/top_level.txt
+[1.404s] reading manifest file '../build/control/control.egg-info/SOURCES.txt'
+[1.406s] writing manifest file '../build/control/control.egg-info/SOURCES.txt'
+[1.410s] running build
+[1.413s] running build_py
+[1.416s] copying control/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/build/lib/control
+[1.417s] running install
+[1.417s] running install_lib
+[1.420s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/build/lib/control/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages/control
+[1.426s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages/control/main.py to main.cpython-310.pyc
+[1.432s] running install_data
+[1.434s] running install_egg_info
+[1.435s] removing '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages/control-0.0.0-py3.10.egg-info' (and everything under it)
+[1.446s] Copying ../build/control/control.egg-info to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages/control-0.0.0-py3.10.egg-info
+[1.486s] running install_scripts
+[1.506s] Installing main script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/control
+[1.510s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/install.log'
+[1.532s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/control' returned '0': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces LD_LIBRARY_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/control build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/control/install.log --install-scripts $base/lib/control --single-version-externally-managed install_data

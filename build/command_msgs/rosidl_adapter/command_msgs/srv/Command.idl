@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from command_msgs/srv/Command.srv
+// generated code does not contain a copyright notice
+
+
+module command_msgs {
+  module srv {
+    struct Command_Request {
+      string command;
+
+      int32 block_level;
+
+      int32 block_index;
+    };
+    struct Command_Response {
+      boolean done;
+    };
+  };
+};

@@ -1,0 +1,26 @@
+[1.130s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/planning': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces LD_LIBRARY_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/planning build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/install.log --install-scripts $base/lib/planning --single-version-externally-managed install_data
+[1.377s] running egg_info
+[1.378s] writing ../build/planning/planning.egg-info/PKG-INFO
+[1.383s] writing dependency_links to ../build/planning/planning.egg-info/dependency_links.txt
+[1.389s] writing entry points to ../build/planning/planning.egg-info/entry_points.txt
+[1.390s] writing requirements to ../build/planning/planning.egg-info/requires.txt
+[1.393s] writing top-level names to ../build/planning/planning.egg-info/top_level.txt
+[1.400s] reading manifest file '../build/planning/planning.egg-info/SOURCES.txt'
+[1.403s] writing manifest file '../build/planning/planning.egg-info/SOURCES.txt'
+[1.406s] running build
+[1.406s] running build_py
+[1.407s] running install
+[1.408s] running install_lib
+[1.412s] running install_data
+[1.414s] running install_egg_info
+[1.420s] removing '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning-0.0.0-py3.10.egg-info' (and everything under it)
+[1.427s] Copying ../build/planning/planning.egg-info to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning-0.0.0-py3.10.egg-info
+[1.466s] running install_scripts
+[1.490s] Installing gripper script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[1.494s] Installing ik script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[1.497s] Installing main script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[1.501s] Installing planning_scene_obstacles script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[1.505s] Installing tf script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[1.507s] Installing transform_cube_pose script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[1.512s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/install.log'
+[1.533s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/planning' returned '0': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces LD_LIBRARY_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/planning build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/install.log --install-scripts $base/lib/planning --single-version-externally-managed install_data

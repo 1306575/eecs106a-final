@@ -1,0 +1,8 @@
+setup.py
+command_msgs/__init__.py
+command_msgs.egg-info/PKG-INFO
+command_msgs.egg-info/SOURCES.txt
+command_msgs.egg-info/dependency_links.txt
+command_msgs.egg-info/top_level.txt
+command_msgs/srv/__init__.py
+command_msgs/srv/_command.py

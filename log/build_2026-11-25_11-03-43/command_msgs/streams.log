@@ -1,0 +1,239 @@
+[0.122s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/command_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/command_msgs -- -j32 -l32
+[0.655s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.658s] -- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.659s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.663s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.668s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.669s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.673s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.674s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.086s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.892s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.635s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.664s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.696s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.697s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.698s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.385s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.495s] -- Added test 'lint_cmake' to check CMake code style
+[4.510s] -- Added test 'xmllint' to check XML markup files
+[4.554s] -- Configuring done
+[5.309s] -- Generating done
+[5.565s] -- Build files have been written to: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/command_msgs
+[5.625s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.646s] [  9%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.647s] [  9%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[5.719s] [  9%] Built target ament_cmake_python_copy_command_msgs
+[5.877s] [35m[1mConsolidate compiler generated dependencies of target command_msgs__rosidl_generator_c[0m
+[5.881s] [  9%] Built target command_msgs__rs
+[5.887s] [  9%] Built target command_msgs__cpp
+[5.920s] [ 21%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.920s] [ 21%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.920s] [ 21%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.923s] [ 21%] [32mBuilding C object CMakeFiles/command_msgs__rosidl_generator_c.dir/rosidl_generator_c/command_msgs/srv/detail/command__functions.c.o[0m
+[6.001s] [ 25%] [32m[1mLinking C shared library libcommand_msgs__rosidl_generator_c.so[0m
+[6.031s] running egg_info
+[6.033s] writing command_msgs.egg-info/PKG-INFO
+[6.038s] writing dependency_links to command_msgs.egg-info/dependency_links.txt
+[6.042s] writing top-level names to command_msgs.egg-info/top_level.txt
+[6.048s] reading manifest file 'command_msgs.egg-info/SOURCES.txt'
+[6.050s] writing manifest file 'command_msgs.egg-info/SOURCES.txt'
+[6.064s] [ 25%] Built target command_msgs__rosidl_generator_c
+[6.079s] [ 25%] Built target ament_cmake_python_build_command_msgs_egg
+[6.093s] [ 34%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.095s] [ 34%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.097s] [ 34%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[6.103s] [35m[1mConsolidate compiler generated dependencies of target command_msgs__rosidl_typesupport_cpp[0m
+[6.149s] [35m[1mConsolidate compiler generated dependencies of target command_msgs__rosidl_typesupport_introspection_cpp[0m
+[6.152s] [ 37%] [32mBuilding CXX object CMakeFiles/command_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/command_msgs/srv/command__type_support.cpp.o[0m
+[6.168s] [35m[1mConsolidate compiler generated dependencies of target command_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[6.186s] [ 40%] [32mBuilding CXX object CMakeFiles/command_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/command_msgs/srv/detail/command__type_support.cpp.o[0m
+[6.224s] [ 43%] [32mBuilding CXX object CMakeFiles/command_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/command_msgs/srv/detail/dds_fastrtps/command__type_support.cpp.o[0m
+[6.291s] [35m[1mConsolidate compiler generated dependencies of target command_msgs__rosidl_typesupport_c[0m
+[6.303s] [35m[1mConsolidate compiler generated dependencies of target command_msgs__rosidl_typesupport_introspection_c[0m
+[6.324s] [ 46%] [32mBuilding CXX object CMakeFiles/command_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/command_msgs/srv/command__type_support.cpp.o[0m
+[6.343s] [35m[1mConsolidate compiler generated dependencies of target command_msgs__rosidl_typesupport_fastrtps_c[0m
+[6.345s] [ 50%] [32mBuilding C object CMakeFiles/command_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/command_msgs/srv/detail/command__type_support.c.o[0m
+[6.386s] [ 56%] [32m[1mLinking CXX shared library libcommand_msgs__rosidl_typesupport_c.so[0m
+[6.388s] [ 59%] [32m[1mLinking CXX shared library libcommand_msgs__rosidl_typesupport_cpp.so[0m
+[6.389s] [ 59%] [32mBuilding CXX object CMakeFiles/command_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/command_msgs/srv/detail/command__type_support_c.cpp.o[0m
+[6.409s] [ 62%] [32m[1mLinking C shared library libcommand_msgs__rosidl_typesupport_introspection_c.so[0m
+[6.469s] [ 65%] Built target command_msgs__rosidl_typesupport_cpp
+[6.471s] [ 65%] Built target command_msgs__rosidl_typesupport_c
+[6.472s] [ 65%] [32m[1mLinking CXX shared library libcommand_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[6.475s] [ 65%] Built target command_msgs__rosidl_typesupport_introspection_c
+[6.534s] [ 68%] [32m[1mLinking CXX shared library libcommand_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.556s] [ 68%] Built target command_msgs__rosidl_typesupport_introspection_cpp
+[6.630s] [ 68%] Built target command_msgs__rosidl_typesupport_fastrtps_cpp
+[6.651s] [ 71%] [32m[1mLinking CXX shared library libcommand_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[6.741s] [ 71%] Built target command_msgs__rosidl_typesupport_fastrtps_c
+[6.780s] [ 71%] Built target command_msgs
+[6.819s] [ 75%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.122s] [ 75%] Built target command_msgs__py
+[7.143s] [35m[1mConsolidate compiler generated dependencies of target command_msgs__rosidl_generator_py[0m
+[7.199s] [ 78%] [32mBuilding C object CMakeFiles/command_msgs__rosidl_generator_py.dir/rosidl_generator_py/command_msgs/srv/_command_s.c.o[0m
+[7.304s] [ 81%] [32m[1mLinking C shared library rosidl_generator_py/command_msgs/libcommand_msgs__rosidl_generator_py.so[0m
+[7.381s] [ 81%] Built target command_msgs__rosidl_generator_py
+[7.407s] [35m[1mConsolidate compiler generated dependencies of target command_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[7.409s] [35m[1mConsolidate compiler generated dependencies of target command_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[7.410s] [35m[1mConsolidate compiler generated dependencies of target command_msgs__rosidl_typesupport_c__pyext[0m
+[7.461s] [ 90%] [32mBuilding C object CMakeFiles/command_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/command_msgs/_command_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.465s] [ 90%] [32mBuilding C object CMakeFiles/command_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/command_msgs/_command_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.469s] [ 90%] [32mBuilding C object CMakeFiles/command_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/command_msgs/_command_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[7.573s] [100%] [32m[1mLinking C shared library rosidl_generator_py/command_msgs/command_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.576s] [100%] [32m[1mLinking C shared library rosidl_generator_py/command_msgs/command_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.580s] [100%] [32m[1mLinking C shared library rosidl_generator_py/command_msgs/command_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.659s] [100%] Built target command_msgs__rosidl_typesupport_introspection_c__pyext
+[7.661s] [100%] Built target command_msgs__rosidl_typesupport_c__pyext
+[7.666s] [100%] Built target command_msgs__rosidl_typesupport_fastrtps_c__pyext
+[7.720s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/command_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/command_msgs -- -j32 -l32
+[7.726s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/command_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/command_msgs
+[7.745s] -- Install configuration: ""
+[7.748s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/ament_index/resource_index/rosidl_interfaces/command_msgs
+[7.751s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs
+[7.753s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv
+[7.753s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/command.h
+[7.759s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail
+[7.761s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__functions.c
+[7.770s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__struct.h
+[7.776s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__type_support.h
+[7.784s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__functions.h
+[7.792s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/msg
+[7.796s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/msg/rosidl_generator_c__visibility_control.h
+[7.801s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/environment/library_path.sh
+[7.801s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/environment/library_path.dsv
+[7.808s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_generator_c.so
+[7.821s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_generator_c.so" to ""
+[7.824s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs
+[7.826s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/msg
+[7.828s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.828s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv
+[7.829s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail
+[7.831s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__rosidl_typesupport_fastrtps_c.h
+[7.841s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_typesupport_fastrtps_c.so
+[7.853s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[7.856s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs
+[7.858s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv
+[7.858s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail
+[7.858s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__builder.hpp
+[7.866s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__traits.hpp
+[7.876s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__type_support.hpp
+[7.885s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__struct.hpp
+[7.893s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/command.hpp
+[7.904s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/msg
+[7.906s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[7.911s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs
+[7.911s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv
+[7.911s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail
+[7.914s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__rosidl_typesupport_fastrtps_cpp.hpp
+[7.920s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/dds_fastrtps
+[7.922s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/msg
+[7.924s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.927s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_typesupport_fastrtps_cpp.so
+[7.939s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[7.942s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs
+[7.944s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/msg
+[7.945s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.945s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv
+[7.946s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail
+[7.949s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__type_support.c
+[7.955s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__rosidl_typesupport_introspection_c.h
+[7.965s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_typesupport_introspection_c.so
+[7.977s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_typesupport_introspection_c.so" to ""
+[7.980s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_typesupport_c.so
+[7.991s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_typesupport_c.so" to ""
+[7.994s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs
+[7.997s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv
+[7.997s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail
+[7.997s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__type_support.cpp
+[8.003s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/include/command_msgs/command_msgs/srv/detail/command__rosidl_typesupport_introspection_cpp.hpp
+[8.012s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_typesupport_introspection_cpp.so
+[8.025s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[8.028s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_typesupport_cpp.so
+[8.043s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_typesupport_cpp.so" to ""
+[8.045s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/environment/pythonpath.sh
+[8.046s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/environment/pythonpath.dsv
+[8.054s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs-0.0.0-py3.10.egg-info
+[8.056s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[8.067s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.076s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[8.086s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.095s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs
+[8.099s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/_command_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.108s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/command_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.118s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/_command_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[8.125s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/srv
+[8.127s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/srv/_command_s.c
+[8.137s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/srv/_command.py
+[8.145s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/srv/__init__.py
+[8.155s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/command_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.163s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/libcommand_msgs__rosidl_generator_py.so
+[8.170s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/__init__.py
+[8.172s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/command_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.182s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/_command_msgs_s.ep.rosidl_typesupport_c.c
+[8.260s] Listing '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs'...
+[8.263s] Listing '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/srv'...
+[8.264s] Compiling '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/srv/__init__.py'...
+[8.268s] Compiling '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/srv/_command.py'...
+[8.272s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/command_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.280s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/command_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.285s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/command_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.297s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/command_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.301s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/command_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.312s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages/command_msgs/command_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.315s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_generator_py.so
+[8.327s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib/libcommand_msgs__rosidl_generator_py.so" to ""
+[8.330s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/ament_index/resource_index/rust_packages/command_msgs
+[8.334s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/rust
+[8.337s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/rust/build.rs
+[8.341s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/rust/Cargo.toml
+[8.349s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/rust/src
+[8.352s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/rust/src/srv.rs
+[8.358s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/rust/src/srv
+[8.360s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/rust/src/srv/rmw.rs
+[8.368s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/rust/src/lib.rs
+[8.379s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/srv/Command.idl
+[8.387s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/srv/Command.srv
+[8.396s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/srv/Command_Request.msg
+[8.403s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/srv/Command_Response.msg
+[8.405s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/ament_index/resource_index/package_run_dependencies/command_msgs
+[8.407s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/ament_index/resource_index/parent_prefix_path/command_msgs
+[8.410s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/environment/ament_prefix_path.sh
+[8.411s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/environment/ament_prefix_path.dsv
+[8.420s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/environment/path.sh
+[8.422s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/environment/path.dsv
+[8.429s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/local_setup.bash
+[8.431s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/local_setup.sh
+[8.432s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/local_setup.zsh
+[8.435s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/local_setup.dsv
+[8.441s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/package.dsv
+[8.450s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/ament_index/resource_index/packages/command_msgs
+[8.453s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/export_command_msgs__rosidl_generator_cExport.cmake
+[8.454s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/export_command_msgs__rosidl_generator_cExport-noconfig.cmake
+[8.457s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/export_command_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[8.457s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/export_command_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.461s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/export_command_msgs__rosidl_generator_cppExport.cmake
+[8.464s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/export_command_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.465s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/export_command_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.471s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/command_msgs__rosidl_typesupport_introspection_cExport.cmake
+[8.473s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/command_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.474s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/command_msgs__rosidl_typesupport_cExport.cmake
+[8.474s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/command_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[8.478s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/command_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[8.482s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/command_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.486s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/command_msgs__rosidl_typesupport_cppExport.cmake
+[8.490s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/command_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[8.494s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/export_command_msgs__rosidl_generator_pyExport.cmake
+[8.498s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/export_command_msgs__rosidl_generator_pyExport-noconfig.cmake
+[8.502s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/rosidl_cmake-extras.cmake
+[8.507s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.511s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.515s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[8.519s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[8.522s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.526s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.529s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[8.530s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/command_msgsConfig.cmake
+[8.531s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/cmake/command_msgsConfig-version.cmake
+[8.531s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/share/command_msgs/package.xml
+[8.531s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/command_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/jenga:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/control:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/command_msgs

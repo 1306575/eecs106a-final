@@ -1,0 +1,52 @@
+[1.068s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/planning': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces LD_LIBRARY_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/planning build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/install.log --install-scripts $base/lib/planning --single-version-externally-managed install_data
+[1.308s] running egg_info
+[1.308s] creating ../build/planning/planning.egg-info
+[1.312s] writing ../build/planning/planning.egg-info/PKG-INFO
+[1.318s] writing dependency_links to ../build/planning/planning.egg-info/dependency_links.txt
+[1.320s] writing entry points to ../build/planning/planning.egg-info/entry_points.txt
+[1.324s] writing requirements to ../build/planning/planning.egg-info/requires.txt
+[1.330s] writing top-level names to ../build/planning/planning.egg-info/top_level.txt
+[1.336s] writing manifest file '../build/planning/planning.egg-info/SOURCES.txt'
+[1.337s] reading manifest file '../build/planning/planning.egg-info/SOURCES.txt'
+[1.340s] writing manifest file '../build/planning/planning.egg-info/SOURCES.txt'
+[1.344s] running build
+[1.346s] running build_py
+[1.346s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build
+[1.347s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build/lib
+[1.349s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build/lib/planning
+[1.349s] copying planning/ik.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build/lib/planning
+[1.352s] copying planning/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build/lib/planning
+[1.356s] copying planning/planning_scene_obstacles.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build/lib/planning
+[1.361s] copying planning/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build/lib/planning
+[1.365s] running install
+[1.365s] running install_lib
+[1.369s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning
+[1.371s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build/lib/planning/planning_scene_obstacles.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning
+[1.380s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build/lib/planning/ik.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning
+[1.387s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build/lib/planning/main.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning
+[1.390s] copying /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build/lib/planning/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning
+[1.394s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning/planning_scene_obstacles.py to planning_scene_obstacles.cpython-310.pyc
+[1.402s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning/ik.py to ik.cpython-310.pyc
+[1.410s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning/main.py to main.cpython-310.pyc
+[1.419s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning/__init__.py to __init__.cpython-310.pyc
+[1.424s] running install_data
+[1.427s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/share/ament_index
+[1.429s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/share/ament_index/resource_index
+[1.429s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/share/ament_index/resource_index/packages
+[1.431s] copying resource/planning -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/share/ament_index/resource_index/packages
+[1.435s] copying package.xml -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/share/planning
+[1.440s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/share/planning/launch
+[1.442s] copying launch/lab5_bringup.launch.py -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/share/planning/launch
+[1.447s] creating /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/share/planning/config
+[1.450s] copying config/obstacles.yaml -> /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/share/planning/config
+[1.455s] running install_egg_info
+[1.459s] Copying ../build/planning/planning.egg-info to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages/planning-0.0.0-py3.10.egg-info
+[1.501s] running install_scripts
+[1.526s] Installing gripper script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[1.531s] Installing ik script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[1.535s] Installing main script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[1.544s] Installing planning_scene_obstacles script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[1.547s] Installing tf script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[1.547s] Installing transform_cube_pose script to /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/planning
+[1.552s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/install.log'
+[1.569s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/planning' returned '0': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/ros2_aruco_interfaces LD_LIBRARY_PATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/planning/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/install/command_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/planning build --build-base /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/build install --record /home/cc/ee106a/fa26/class/ee106a-abl/eecs106a-final/build/planning/install.log --install-scripts $base/lib/planning --single-version-externally-managed install_data
