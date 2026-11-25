@@ -16,6 +16,7 @@ from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from sensor_msgs.msg import JointState
 from tf2_ros import Buffer, TransformListener
 from scipy.spatial.transform import Rotation as R
+from command_msgs.srv import command
 import numpy as np
 
 from planning.ik import IKPlanner
@@ -42,7 +43,7 @@ class UR7e_Movement(Node):
         self.tf_listener = TransformListener(self.tf_buffer, self)
 
         self.joint_state_sub = self.create_subscription(JointState, '/joint_states', self.joint_state_callback, 1)
-        # self.command_sub = self.create_subscription(Command, '/command', self.command_callback, 1)
+        self.command_client = self.create_client(command, 'jenga_command', self.command_callback)
 
         self.exec_ac = ActionClient(
             self, FollowJointTrajectory,
@@ -73,10 +74,13 @@ class UR7e_Movement(Node):
             self.start_joints = copy.deepcopy(msg)
             self.get_logger().info('Recorded the start pose, we will come back here to look for the tape')
 
-    def command_callback(self, command):
-        current_command = command.command
+    def command_callback(self, request, response):
+        current_command = request.command
         if current_command == "pull":
-            self.pull_callback(command.tower_pose, command.block_level, command.block_index)
+            self.pull_callback(request.tower_pose, request.block_level, request.block_index)
+            response.done = True
+        
+        return response
 
     def pull_callback(self, tower_pose, block_level, block_index):
         if self.tower_pos is not None or self.tower_rot is not None:
@@ -99,18 +103,14 @@ class UR7e_Movement(Node):
         # Think about you will leverage the IK planner to get joint configurations for the cube grasping task.
         # To understand how the queue works, refer to the execute_jobs() function below.
         # -----------------------------------------------------------
-        # 1) Move to Pre-Grasp Position (gripper above the cube)
-        '''
-        The fingertips should start PRE_GRASP_CLEARANCE above the top of the cube.
-        Remember the IK target is wrist_3_link, which is GRIPPER_LENGTH above the fingertips.
-        '''
 
+        #Move to the block X and Y, but remain at high Z
         wrist_3_pose = self.tf_buffer.lookup_transform("base_link", "wrist_3_link", Time(), timeout=Duration(seconds=0.5))
         current_z = wrist_3_pose.transform.translation.z
         pre_grasp_ik_tall = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, current_z)
         self.job_queue.append(pre_grasp_ik_tall)
 
-
+        #Rotate the grasper so that it can grab the block
         rot_matrix = np.array([[0, -1, 0],
                                [-1 ,0, 0],
                                [0, 0, -1]])
@@ -119,31 +119,28 @@ class UR7e_Movement(Node):
         pre_grasp_ik_tall_rotate =  self.ik_planner.compute_ik(self.joint_state, block_x, block_y, current_z, quat[0], quat[1], quat[2], quat[3])
         self.job_queue.append(pre_grasp_ik_tall_rotate)
 
+        #Move to the block X and block Y, and a Z that is PRE_GRASP_CLEARANCE above Z
         true_z = GRIPPER_LENGTH + PRE_GRASP_CLEARANCE + block_z
         pre_grasp_ik = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, true_z, quat[0], quat[1], quat[2], quat[3])
         self.job_queue.append(pre_grasp_ik)
 
-        # 2) Move to Grasp Position (lower the gripper to the cube)
-        '''
-        Put the fingertips at the middle of the cube (half its height), but never closer
-        than TABLE_CLEARANCE to the table. Save how far above the bottom of the cube the
-        fingertips are in self.grasp_height, you'll need it to put the cube down.
-        '''
+        #Move to grasp height
         grasp_height = block_z + GRIPPER_LENGTH
         grasp_ik = self.ik_planner.compute_ik(self.joint_state, block_x, block_y, grasp_height, quat[0], quat[1], quat[2], quat[3])
         self.job_queue.append(grasp_ik)
 
-        # 3) Close the gripper. See job_queue entries defined in init above for how to add this action.
+        #Close the gripper. See job_queue entries defined in init above for how to add this action.
         self.job_queue.append('toggle_grip')
 
-        # 4) Move back to Pre-Grasp Position
+        #Pull the block out
         pull_x = block_x - PULL_AMT
         post_grasp_ik = self.ik_planner.compute_ik(self.joint_state, pull_x, block_y, grasp_height, quat[0], quat[1], quat[2], quat[3])
         self.job_queue.append(post_grasp_ik)
 
+        #Go back to high Z
         self.job_queue.append(pre_grasp_ik_tall)
 
-        # 5) Go back to the start pose (self.start_joints) so the camera can see the table again
+        #Go back to the start pose (self.start_joints) so the camera can see the table again
         self.job_queue.append(self.start_joints)
 
         self.execute_jobs()
@@ -237,40 +234,41 @@ class UR7e_Movement(Node):
             self.get_logger().error(f'Execution failed: {e}')
 
 
-# def main(args=None):
-#     rclpy.init(args=args)
-#     node = UR7e_Movement()
-#     rclpy.spin(node)
-#     node.destroy_node()
-
 def main(args=None):
     rclpy.init(args=args)
     node = UR7e_Movement()
+    rclpy.spin(node)
+    node.destroy_node()
 
-    # Wait until joint states are received
-    while rclpy.ok() and node.joint_state is None:
-        rclpy.spin_once(node, timeout_sec=0.1)
+### for just testing the movement portion
+# def main(args=None):
+#     rclpy.init(args=args)
+#     node = UR7e_Movement()
 
-    # Create dummy tower pose
-    tower_pose = node.tf_buffer.lookup_transform("base_link", "jenga", Time(), timeout=Duration(seconds=0.5))
+#     # Wait until joint states are received
+#     while rclpy.ok() and node.joint_state is None:
+#         rclpy.spin_once(node, timeout_sec=0.1)
 
-    # Test parameters
-    block_level = 6
-    block_index = 2
+#     # Create dummy tower pose
+#     tower_pose = node.tf_buffer.lookup_transform("base_link", "jenga", Time(), timeout=Duration(seconds=0.5))
 
-    node.get_logger().info("Testing pull_callback...")
+#     # Test parameters
+#     block_level = 6
+#     block_index = 2
 
-    node.pull_callback(tower_pose, block_level, block_index)
+#     node.get_logger().info("Testing pull_callback...")
 
-    # Keep node alive while asynchronous jobs execute
-    try:
-        rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        node.destroy_node()
-        if rclpy.ok():
-            rclpy.shutdown()
+#     node.pull_callback(tower_pose, block_level, block_index)
+
+#     # Keep node alive while asynchronous jobs execute
+#     try:
+#         rclpy.spin(node)
+#     except KeyboardInterrupt:
+#         pass
+#     finally:
+#         node.destroy_node()
+#         if rclpy.ok():
+#             rclpy.shutdown()
 
 
 if __name__ == '__main__':

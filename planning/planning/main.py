@@ -16,6 +16,7 @@ from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from sensor_msgs.msg import JointState
 from tf2_ros import Buffer, TransformListener
 from scipy.spatial.transform import Rotation as R
+from command_msgs.srv import command
 import numpy as np
 
 from planning.ik import IKPlanner
@@ -42,7 +43,7 @@ class UR7e_Movement(Node):
         self.tf_listener = TransformListener(self.tf_buffer, self)
 
         self.joint_state_sub = self.create_subscription(JointState, '/joint_states', self.joint_state_callback, 1)
-        # self.command_sub = self.create_subscription(Command, '/command', self.command_callback, 1)
+        self.command_client = self.create_client(command, 'jenga_command', self.command_callback)
 
         self.exec_ac = ActionClient(
             self, FollowJointTrajectory,
@@ -73,10 +74,13 @@ class UR7e_Movement(Node):
             self.start_joints = copy.deepcopy(msg)
             self.get_logger().info('Recorded the start pose, we will come back here to look for the tape')
 
-    def command_callback(self, command):
-        current_command = command.command
+    def command_callback(self, request, response):
+        current_command = request.command
         if current_command == "pull":
-            self.pull_callback(command.tower_pose, command.block_level, command.block_index)
+            self.pull_callback(request.tower_pose, request.block_level, request.block_index)
+            response.done = True
+        
+        return response
 
     def pull_callback(self, tower_pose, block_level, block_index):
         if self.tower_pos is not None or self.tower_rot is not None:
@@ -230,40 +234,41 @@ class UR7e_Movement(Node):
             self.get_logger().error(f'Execution failed: {e}')
 
 
-# def main(args=None):
-#     rclpy.init(args=args)
-#     node = UR7e_Movement()
-#     rclpy.spin(node)
-#     node.destroy_node()
-
 def main(args=None):
     rclpy.init(args=args)
     node = UR7e_Movement()
+    rclpy.spin(node)
+    node.destroy_node()
 
-    # Wait until joint states are received
-    while rclpy.ok() and node.joint_state is None:
-        rclpy.spin_once(node, timeout_sec=0.1)
+### for just testing the movement portion
+# def main(args=None):
+#     rclpy.init(args=args)
+#     node = UR7e_Movement()
 
-    # Create dummy tower pose
-    tower_pose = node.tf_buffer.lookup_transform("base_link", "jenga", Time(), timeout=Duration(seconds=0.5))
+#     # Wait until joint states are received
+#     while rclpy.ok() and node.joint_state is None:
+#         rclpy.spin_once(node, timeout_sec=0.1)
 
-    # Test parameters
-    block_level = 6
-    block_index = 2
+#     # Create dummy tower pose
+#     tower_pose = node.tf_buffer.lookup_transform("base_link", "jenga", Time(), timeout=Duration(seconds=0.5))
 
-    node.get_logger().info("Testing pull_callback...")
+#     # Test parameters
+#     block_level = 6
+#     block_index = 2
 
-    node.pull_callback(tower_pose, block_level, block_index)
+#     node.get_logger().info("Testing pull_callback...")
 
-    # Keep node alive while asynchronous jobs execute
-    try:
-        rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        node.destroy_node()
-        if rclpy.ok():
-            rclpy.shutdown()
+#     node.pull_callback(tower_pose, block_level, block_index)
+
+#     # Keep node alive while asynchronous jobs execute
+#     try:
+#         rclpy.spin(node)
+#     except KeyboardInterrupt:
+#         pass
+#     finally:
+#         node.destroy_node()
+#         if rclpy.ok():
+#             rclpy.shutdown()
 
 
 if __name__ == '__main__':
